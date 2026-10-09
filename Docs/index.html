@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#18362f">
-    <meta name="description" content="徒步装备库：一款本机优先的 macOS 原生应用，整理户外装备、打包清单与徒步记录。">
-    <title>徒步装备库 · 把出发前的准备，留在一处</title>
+    <meta name="theme-color" content="#17372f">
+    <meta name="description" content="徒步装备库是一款本机优先的 macOS 原生应用，管理户外装备、打包与路餐、路线天气和徒步记录。">
+    <title>徒步装备库 — 从装备清单，到下一段山路</title>
     <link rel="icon" href="assets/route-mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -16,7 +16,7 @@
         <span>徒步装备库</span>
       </a>
       <nav aria-label="主导航">
-        <a href="#features">功能</a>
+        <a href="#features">功能全览</a>
         <a href="#preview">界面预览</a>
         <a href="#privacy">数据与许可</a>
         <a class="nav-source" href="https://github.com/llxace/outdoor-gear-library">GitHub <span aria-hidden="true">↗</span></a>
@@ -24,114 +24,160 @@
     </header>
 
     <main id="top">
-      <section class="hero shell">
+      <section class="hero shell" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="signal-dot"></span> MACOS 原生 · 本机优先 · 开源</p>
-          <h1>把出发前的准备，<br><em>留在一处。</em></h1>
-          <p class="hero-intro">从帐篷和头灯，到路线、天气与徒步回忆。把零散的户外装备整理成一份随时可用的行前清单。</p>
+          <p class="eyebrow"><span class="signal-dot"></span> MACOS 原生 · 本机优先 · 开放源码</p>
+          <h1 id="hero-title">从装备清单，<br><em>到下一段山路。</em></h1>
+          <p class="hero-intro">管理装备，核对负重，安排路线与路餐；回来后，把走过的路和当时带的装备一起记下来。</p>
           <div class="hero-actions">
-            <a class="button button-dark" href="https://github.com/llxace/outdoor-gear-library">查看 GitHub 仓库 <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#features">浏览功能 <span aria-hidden="true">↓</span></a>
+            <a class="button button-dark" href="https://github.com/llxace/outdoor-gear-library">查看项目源码 <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#features">看看能做什么 <span aria-hidden="true">↓</span></a>
           </div>
-          <div class="hero-meta"><span>macOS 13+</span><span>SwiftUI</span><span>GNU AGPL-3.0</span></div>
+          <div class="hero-facts" aria-label="项目概况">
+            <span><b>01</b> Mac 本机资料库</span>
+            <span><b>02</b> SwiftUI 原生应用</span>
+            <span><b>03</b> AGPL-3.0 开源</span>
+          </div>
         </div>
         <figure class="route-figure">
-          <img src="assets/route-card.svg" alt="以等高线、徒步路线轨迹和高程曲线构成的路线卡片">
-          <figcaption><span>路线图式的行前记录</span><span>示意路线 · 虚构数据</span></figcaption>
-          <span class="figure-index" aria-hidden="true">FIELD NOTE / 01</span>
+          <span class="figure-index">FIELD NOTE <b>01</b> / ROUTE</span>
+          <img src="assets/route-card.svg" alt="虚构的徒步路线、等高线和海拔剖面示意图">
+          <figcaption><span>一段路线 · 一份出发准备</span><span>示意路线 / 虚构数据</span></figcaption>
+          <span class="figure-stamp" aria-hidden="true">PACK<br>LIGHT<br><i>WALK FAR</i></span>
         </figure>
         <div class="hero-rule" aria-hidden="true"></div>
-        <p class="hero-footnote">记录你的装备 · 计算这次负重 · 留下走过的路</p>
+        <p class="hero-footnote">整理 · 计划 · 记录&nbsp;&nbsp; / &nbsp;&nbsp;让每次出发都有迹可循</p>
       </section>
 
-      <section class="intro-band" id="features">
-        <div class="shell intro-grid">
-          <p class="section-kicker">一份个人装备档案</p>
-          <div>
-            <h2>装备有来处，<br>行程有准备，回忆有细节。</h2>
-            <p class="section-copy">装备库、打包清单和徒步记录彼此相连。数据默认保存在自己的 Mac 上；路线、地图和天气需要时再联网。</p>
-          </div>
-          <div class="feature-list">
-            <article class="feature-row">
-              <span class="feature-mark">A</span>
-              <div><h3>装备收纳</h3><p>分类、状态、重量、照片、附件与组合关系，一起整理。</p></div>
-              <span class="feature-arrow" aria-hidden="true">↗</span>
-            </article>
-            <article class="feature-row">
-              <span class="feature-mark">B</span>
-              <div><h3>出发清单</h3><p>从现有装备中挑选，按携带数量自动合计重量。</p></div>
-              <span class="feature-arrow" aria-hidden="true">↗</span>
-            </article>
-            <article class="feature-row">
-              <span class="feature-mark">C</span>
-              <div><h3>徒步记录</h3><p>保存路线、轨迹、当次装备快照和路上的感受。</p></div>
-              <span class="feature-arrow" aria-hidden="true">↗</span>
-            </article>
-            <article class="feature-row">
-              <span class="feature-mark">D</span>
-              <div><h3>路线与路餐</h3><p>导入 GPX / KML，查看天气、海拔，并安排饮水与补给。</p></div>
-              <span class="feature-arrow" aria-hidden="true">↗</span>
-            </article>
-          </div>
+      <section class="route-strip" aria-label="应用使用流程">
+        <div class="shell route-strip-inner">
+          <span class="strip-label">一趟徒步的前后</span>
+          <a href="#gear"><b>01</b><span>整理装备</span><i>↗</i></a>
+          <span class="strip-dash" aria-hidden="true">········</span>
+          <a href="#planning"><b>02</b><span>准备行程</span><i>↗</i></a>
+          <span class="strip-dash" aria-hidden="true">········</span>
+          <a href="#history"><b>03</b><span>留下记录</span><i>↗</i></a>
+          <span class="strip-note">按一次出发的时间顺序展开</span>
         </div>
       </section>
 
-      <section class="preview-section shell" id="preview">
+      <section class="features-section shell" id="features" aria-labelledby="features-title">
         <div class="section-heading">
-          <p class="section-kicker">应用界面</p>
-          <h2>让清单跟着旅程走。</h2>
-          <p>界面预览使用虚构的演示装备；没有展示或上传个人装备数据。</p>
+          <p class="section-kicker">功能全览 <span>WHAT’S INSIDE</span></p>
+          <div>
+            <h2 id="features-title">从一件装备，<br>到完整的一次出发。</h2>
+            <p>装备档案、出发清单和徒步历史彼此衔接。点开每项可直接查看对应源码。</p>
+          </div>
+          <span class="heading-index">FIELD GUIDE<br>功能指南 / 2026</span>
         </div>
-        <figure class="app-preview preview-wide">
-          <img src="assets/library-preview.svg" alt="装备库列表界面预览，含虚构的帐篷、睡垫和头灯记录">
-          <figcaption><span>装备库</span><span>分类浏览 · 重量与状态一眼可见</span></figcaption>
-        </figure>
-        <div class="preview-pair">
-          <figure class="app-preview">
-            <img src="assets/packing-preview.svg" alt="徒步打包清单界面预览，展示路线信息和装备重量合计">
-            <figcaption><span>本次打包</span><span>选择装备，自动汇总</span></figcaption>
-          </figure>
-          <figure class="app-preview">
-            <img src="assets/history-preview.svg" alt="徒步历史界面预览，展示轨迹地图和行程记录字段">
-            <figcaption><span>徒步回忆</span><span>轨迹与装备快照</span></figcaption>
-          </figure>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-card-large" id="gear">
+            <div class="card-topline"><span>装备档案</span><span class="card-symbol">01 / GEAR</span></div>
+            <h3>把装备资料，<br>整理成自己的库。</h3>
+            <p>记录名称、品牌型号、分类、数量、重量、价格、状态、标签与备注；管理照片、附件和组合装备，也可用可选工具整理产品照。</p>
+            <ul><li>分类浏览、搜索与概览统计</li><li>收藏常用装备，维护库存与状态</li><li>多用户本机资料库，可在清单中借用他人装备</li></ul>
+            <a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Gear">查看装备管理源码 <span>↗</span></a>
+            <span class="card-watermark" aria-hidden="true">G</span>
+          </article>
+
+          <article class="feature-card feature-card-ink" id="packing">
+            <div class="card-topline"><span>行前打包</span><span class="card-symbol">02 / PACK</span></div>
+            <h3>选好这次带什么，<br>重量跟着汇总。</h3>
+            <p>从装备库选择物品并填写携带数量，查看已知重量、装备价值与未补全项目；损坏装备不会加入清单。</p>
+            <ul><li>按分类筛选，也可只看已选物品</li><li>自有装备与借用装备合并计算</li><li>清空清单后可撤销恢复</li></ul>
+            <a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Packing">查看打包功能源码 <span>↗</span></a>
+            <span class="card-watermark" aria-hidden="true">P</span>
+          </article>
+
+          <article class="feature-card" id="planning">
+            <div class="card-topline"><span>路线与天气</span><span class="card-symbol">03 / ROUTE</span></div>
+            <h3>先看路线，再看天。</h3>
+            <p>导入 GPX / KML，或按地名和路线名称搜索。预览地图、距离与海拔；可组合多段路线，并查看出发时段天气、逐日预报和远期趋势。</p>
+            <ul><li>内置国内路线目录，另有在线路线搜索</li><li>海拔统计会标明轨迹数据或地形估算来源</li><li>天气和路线搜索需要联网，覆盖因地区而异</li></ul>
+            <div class="card-links"><a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Routes">路线源码 <span>↗</span></a><a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Weather">天气源码 <span>↗</span></a></div>
+            <span class="card-watermark" aria-hidden="true">R</span>
+          </article>
+
+          <article class="feature-card" id="meals">
+            <div class="card-topline"><span>路餐与饮水</span><span class="card-symbol">04 / FOOD</span></div>
+            <h3>把每天的补给，<br>也算进行程。</h3>
+            <p>按天数、餐次和人数安排食物，记录份数、包装重量、热量、价格与准备方式；汇总每日能量、总重量、预算和出发携水量。</p>
+            <ul><li>生成可复制的采购清单</li><li>根据已录食物提供路餐建议</li><li>本机拍照识别营养标签，结果先核对再保存</li></ul>
+            <a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Meals">查看路餐功能源码 <span>↗</span></a>
+            <span class="card-watermark" aria-hidden="true">F</span>
+          </article>
+
+          <article class="feature-card feature-card-photo" id="history">
+            <div class="card-topline"><span>徒步历史</span><span class="card-symbol">05 / LOG</span></div>
+            <h3>走过之后，<br>再把细节留下。</h3>
+            <p>从当前打包清单生成记录，或手动补录日期、路线、游记、天气与感受。轨迹、当次装备快照和实际数量各自留在这次历史里。</p>
+            <ul><li>按年份浏览，搜索路线和游记</li><li>查看历史路线图与当次装备重量</li><li>修改历史装备不会改动当前库存</li></ul>
+            <a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/History">查看徒步记录源码 <span>↗</span></a>
+            <span class="card-watermark" aria-hidden="true">L</span>
+          </article>
+
+          <article class="feature-card feature-card-import" id="data-tools">
+            <div class="card-topline"><span>资料迁移与整理</span><span class="card-symbol">06 / KEEP</span></div>
+            <h3>旧表格能接上，<br>本机资料也能带走。</h3>
+            <p>Excel 导入支持预览与字段匹配；CSV / TSV 可导入，CSV 可导出。当前用户的完整备份包含资料、清单、照片和附件，恢复时按编号合并。</p>
+            <ul><li>自动编号、批量编辑、复制与回收站整理</li><li>设置外观、资料库名称与显示货币</li><li>汇率按需刷新，作为价格参考</li></ul>
+            <div class="card-links"><a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/ImportExport">导入导出源码 <span>↗</span></a><a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Profiles">用户资料库源码 <span>↗</span></a></div>
+            <span class="card-watermark" aria-hidden="true">K</span>
+          </article>
         </div>
-        <p class="preview-note"><span class="signal-dot"></span> 所有预览均为虚构演示数据，不含真实用户档案、装备清单或照片。</p>
+      </section>
+
+      <section class="preview-section" id="preview">
+        <div class="shell">
+          <div class="section-heading preview-heading">
+            <p class="section-kicker">应用界面 <span>ON YOUR MAC</span></p>
+            <div><h2>清单看得见，<br>出发更有把握。</h2><p>以下是页面示意图，用虚构内容说明界面结构；不是用户的真实档案或应用截图。</p></div>
+            <a class="heading-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources">浏览全部应用源码 <span>↗</span></a>
+          </div>
+          <figure class="app-preview preview-wide">
+            <img src="assets/library-preview.svg" alt="装备库窗口示意，显示虚构的三件装备和分类侧栏">
+            <figcaption><span>装备库</span><span>分类、库存、重量与状态</span></figcaption>
+          </figure>
+          <div class="preview-pair">
+            <figure class="app-preview">
+              <img src="assets/packing-preview.svg" alt="打包清单窗口示意，显示虚构的装备选择与重量汇总">
+              <figcaption><span>本次打包</span><span>数量与总重量一并核对</span></figcaption>
+            </figure>
+            <figure class="app-preview">
+              <img src="assets/history-preview.svg" alt="徒步历史窗口示意，显示虚构的路线轨迹和历史摘要">
+              <figcaption><span>徒步记录</span><span>路线、装备快照与回忆</span></figcaption>
+            </figure>
+          </div>
+          <p class="preview-note"><span class="signal-dot"></span> 所有示意图均为虚构内容，不含任何个人装备数据、照片或行程记录。</p>
+        </div>
       </section>
 
       <section class="privacy-band" id="privacy">
         <div class="shell privacy-grid">
-          <div>
-            <p class="section-kicker">设计原则</p>
-            <h2>资料留在本机。<br><em>出发时再连接世界。</em></h2>
-          </div>
+          <div><p class="section-kicker">数据与许可 <span>LOCAL BY DEFAULT</span></p><h2>个人资料在本机。<br><em>数据边界写清楚。</em></h2></div>
           <div class="privacy-copy">
-            <p>装备资料、照片、备份和徒步记录保存在本机。在线路线、天气与汇率功能会访问相应服务。应用源码和路线数据库采用不同许可，来源与声明都在仓库中列出。</p>
-            <a class="text-link light-link" href="https://github.com/llxace/outdoor-gear-library/blob/main/NOTICE.md">查看来源与许可说明 <span aria-hidden="true">↗</span></a>
+            <p>装备档案、照片、附件、备份和徒步记录默认保存在 Mac。本公开仓库只有空白初始化模板与公开路线目录，不包含个人清单、照片、历史记录或备份。</p>
+            <p>应用源码使用 GNU AGPL-3.0；路线数据库按其元数据另行标注 ODbL-1.0。路线与天气联网功能会访问相应服务，详情和来源均可查阅。</p>
+            <div class="privacy-links"><a href="https://github.com/llxace/outdoor-gear-library/blob/main/NOTICE.md">来源与许可说明 <span>↗</span></a><a href="https://github.com/llxace/outdoor-gear-library/blob/main/LICENSE">AGPL-3.0 全文 <span>↗</span></a><a href="https://github.com/llxace/outdoor-gear-library/blob/main/Resources/HomeBox-LICENSE.txt">上游许可文件 <span>↗</span></a></div>
           </div>
         </div>
       </section>
 
-      <section class="closing shell">
-        <div class="closing-map" aria-hidden="true">
-          <svg viewBox="0 0 520 150" preserveAspectRatio="none">
-            <path d="M-15 35c73 17 80-22 148-10s70 31 130 23 75-32 133-17 81 17 139-8"/>
-            <path d="M-15 53c73 17 80-22 148-10s70 31 130 23 75-32 133-17 81 17 139-8"/>
-            <path d="M-15 111c70-19 91 16 155 9s78-32 139-21 83 28 145 11 83-31 119-20"/>
-            <path d="M-15 129c70-19 91 16 155 9s78-32 139-21 83 28 145 11 83-31 119-20"/>
-            <path class="trail-line" d="M22 113c42-13 47-47 97-43s53 33 94 14 55-43 99-27 47 3 82-19 59 3 97-16"/>
-          </svg>
-        </div>
-        <p class="section-kicker">从一份清单开始</p>
-        <h2>把装备整理好，<br>就可以开始计划下一程。</h2>
-        <a class="button button-dark" href="https://github.com/llxace/outdoor-gear-library">在 GitHub 查看源码 <span aria-hidden="true">↗</span></a>
+      <section class="closing shell" id="source">
+        <div class="closing-map" aria-hidden="true"><svg viewBox="0 0 520 150" preserveAspectRatio="none"><path d="M-15 35c73 17 80-22 148-10s70 31 130 23 75-32 133-17 81 17 139-8"/><path d="M-15 53c73 17 80-22 148-10s70 31 130 23 75-32 133-17 81 17 139-8"/><path d="M-15 111c70-19 91 16 155 9s78-32 139-21 83 28 145 11 83-31 119-20"/><path d="M-15 129c70-19 91 16 155 9s78-32 139-21 83 28 145 11 83-31 119-20"/><path class="trail-line" d="M22 113c42-13 47-47 97-43s53 33 94 14 55-43 99-27 47 3 82-19 59 3 97-16"/></svg></div>
+        <p class="section-kicker">继续了解 <span>OPEN PROJECT</span></p>
+        <h2>从源码开始，<br>一起把下一程准备好。</h2>
+        <p class="closing-copy">目前公开的是源码和 Xcode 工程，可按仓库说明在 Mac 上构建。</p>
+        <div class="closing-actions"><a class="button button-dark" href="https://github.com/llxace/outdoor-gear-library">打开 GitHub 仓库 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/llxace/outdoor-gear-library/blob/main/README.md">查看构建说明 <span>↗</span></a><a class="text-link" href="https://github.com/llxace/outdoor-gear-library/issues">反馈问题或建议 <span>↗</span></a></div>
+        <p class="system-note">macOS 13+ <i>·</i> Xcode 15+ <i>·</i> SwiftUI <i>·</i> GNU AGPL-3.0</p>
       </section>
     </main>
 
     <footer class="site-footer shell">
       <a class="brand" href="#top"><img src="assets/route-mark.svg" width="32" height="32" alt=""><span>徒步装备库</span></a>
-      <p>macOS 原生 · SwiftUI · GNU AGPL-3.0</p>
-      <a href="https://github.com/llxace/outdoor-gear-library">GitHub ↗</a>
+      <p>本机优先 · 记录装备与走过的路</p>
+      <div><a href="https://github.com/llxace/outdoor-gear-library">GitHub ↗</a><a href="#privacy">数据与许可 ↑</a></div>
     </footer>
   </body>
 </html>

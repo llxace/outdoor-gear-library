@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.build/
+build/
+DerivedData/
+work/
+*.xcuserstate
+*.xcarchive/
+*.dSYM/
+*.app/
+*.gearbackup/
+
+# Local library exports and user records
+inventory.json
+inventory.previous.json
+users.json
+Photos/
+Files/
+Avatars/
+PrivateData/
+Exports/

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <rect width="1200" height="760" rx="18" fill="#F2F4EF"/>
+  <rect width="188" height="760" rx="18" fill="#18362F"/>
+  <path d="M188 0h1012v760H188z" fill="#F8F9F5"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif">
+    <text x="28" y="48" fill="#F2F4EF" font-size="18" font-weight="700">山行 / 装备库</text>
+    <text x="36" y="115" fill="#B9C9BA" font-size="14">装备库</text>
+    <rect x="16" y="136" width="156" height="38" rx="7" fill="#315347"/>
+    <text x="36" y="161" fill="#F2F4EF" font-size="14">打包清单</text>
+    <text x="36" y="210" fill="#B9C9BA" font-size="14">徒步历史</text>
+    <text x="36" y="256" fill="#B9C9BA" font-size="14">设置</text>
+    <text x="230" y="63" fill="#233B32" font-size="27" font-weight="700">本次打包</text>
+    <text x="230" y="91" fill="#718077" font-size="13">从装备库勾选携带物品，重量自动汇总</text>
+    <rect x="230" y="120" width="900" height="148" rx="10" fill="#18362F"/>
+    <text x="260" y="155" fill="#B9C9BA" font-size="12" letter-spacing="1.6">路线 / 徒步规划</text>
+    <text x="260" y="194" fill="#F2F4EF" font-size="25" font-weight="700">山脊环线</text>
+    <text x="260" y="230" fill="#C7D2C6" font-size="13">路线、天气与清单放在同一页</text>
+    <path d="M810 235c50-13 53-54 107-39s53-15 93-37 66 8 103-26" stroke="#E9804D" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="1113" cy="133" r="5" fill="#E9804D"/>
+    <rect x="230" y="289" width="900" height="104" rx="9" fill="#E8EEE7"/>
+    <text x="254" y="322" fill="#718077" font-size="13">当前清单</text>
+    <text x="254" y="363" fill="#18362F" font-size="30" font-weight="700">3 <tspan font-size="14" font-weight="400">件装备</tspan></text>
+    <text x="540" y="322" fill="#718077" font-size="13">装备总重</text>
+    <text x="540" y="363" fill="#18362F" font-size="30" font-weight="700">1.81 <tspan font-size="14" font-weight="400">kg</tspan></text>
+    <text x="840" y="322" fill="#718077" font-size="13">未填写重量</text>
+    <text x="840" y="363" fill="#18362F" font-size="30" font-weight="700">0 <tspan font-size="14" font-weight="400">件</tspan></text>
+    <text x="230" y="437" fill="#233B32" font-size="17" font-weight="650">装备清单</text>
+    <path d="M230 458h900" stroke="#DDE3DB"/>
+    <g fill="#233B32" font-size="14">
+      <text x="250" y="504" font-weight="600">✓</text><text x="282" y="504" font-weight="600">轻量三季帐篷</text><text x="650" y="504" fill="#7F8A82">1,250 g × 1</text><text x="910" y="504">1,250 g</text>
+      <text x="250" y="564" font-weight="600">✓</text><text x="282" y="564" font-weight="600">轻量气垫睡垫</text><text x="650" y="564" fill="#7F8A82">480 g × 1</text><text x="910" y="564">480 g</text>
+      <text x="250" y="624" font-weight="600">✓</text><text x="282" y="624" font-weight="600">轻量头灯</text><text x="650" y="624" fill="#7F8A82">78 g × 1</text><text x="910" y="624">78 g</text>
+    </g>
+    <path d="M230 520h900M230 580h900M230 640h900" stroke="#E6EAE4"/>
+    <text x="230" y="710" fill="#A1AAA2" font-size="12">界面预览 · 虚构演示数据</text>
+  </g>
+</svg>

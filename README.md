@@ -6,7 +6,7 @@
 
 > 发布仓库不包含任何用户装备清单、历史行程、照片、附件或备份。`Resources/InitialInventory.json` 是空白初始化模板；`Resources/DomesticRoutes.json` 是单独标注 ODbL 的公开路线数据。
 
-![装备库界面预览，采用虚构演示数据](Docs/assets/library-preview.svg)
+![macOS 应用实际界面截图，使用隔离的临时演示资料](Docs/assets/app-library.png)
 
 ## 功能
 

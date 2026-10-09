@@ -120,9 +120,17 @@ a:focus-visible { outline: 3px solid var(--signal); outline-offset: 4px; }
 .heading-link span { color: var(--signal); font-size: 14px; }
 .app-preview { min-width: 0; margin: 0; }
 .app-preview img { width: 100%; height: auto; border: 1px solid #d7ded5; box-shadow: 0 22px 48px rgb(24 54 47 / 9%); }
+.real-shot { padding: 17px; border: 1px solid #d5ded4; background: #e7ece5; }
+.real-shot img { border-color: #29352f; border-radius: 13px; box-shadow: 0 20px 48px rgb(15 34 26 / 17%); }
 .app-preview figcaption { display: flex; justify-content: space-between; gap: 12px; margin-top: 15px; color: #758178; font-size: 11px; }
 .app-preview figcaption span:first-child { color: var(--ink); font-weight: 700; }
-.preview-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 46px; }
+.screen-index { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 42px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.screen-index a { min-height: 106px; display: flex; flex-direction: column; justify-content: center; gap: 6px; padding: 14px 20px; }
+.screen-index a + a { border-left: 1px solid var(--rule); }
+.screen-index a:hover b, .screen-index a:hover i { color: var(--signal); }
+.screen-index span { color: #8d998f; font: 9px/1.2 var(--display); letter-spacing: .13em; }
+.screen-index b { color: var(--ink); font-size: 14px; transition: color .18s ease; }
+.screen-index i { color: #76837a; font-size: 10px; font-style: normal; transition: color .18s ease; }
 .preview-note { display: flex; align-items: center; gap: 12px; margin: 35px 0 0; color: #879289; font-size: 10px; }
 .preview-note .signal-dot { width: 6px; height: 6px; box-shadow: 0 0 0 3px rgb(233 130 80 / 13%); }
 
@@ -222,7 +230,11 @@ a:focus-visible { outline: 3px solid var(--signal); outline-offset: 4px; }
   .preview-section { padding-block: 76px 78px; }
   .preview-heading { margin-bottom: 27px; }
   .app-preview figcaption { flex-direction: column; gap: 5px; font-size: 10px; }
-  .preview-pair { grid-template-columns: 1fr; gap: 29px; margin-top: 32px; }
+  .real-shot { padding: 7px; }
+  .real-shot img { border-radius: 8px; }
+  .screen-index { grid-template-columns: 1fr; margin-top: 27px; }
+  .screen-index a { min-height: 75px; padding-inline: 12px; }
+  .screen-index a + a { border-top: 1px solid var(--rule); border-left: 0; }
   .preview-note { align-items: flex-start; margin-top: 25px; font-size: 9px; line-height: 1.7; }
   .privacy-grid { grid-template-columns: 1fr; gap: 25px; min-height: 0; padding-block: 60px 65px; }
   .privacy-grid h2 { font-size: 36px; }

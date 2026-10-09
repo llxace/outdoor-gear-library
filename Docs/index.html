@@ -66,7 +66,7 @@
           <p class="section-kicker">功能全览 <span>WHAT’S INSIDE</span></p>
           <div>
             <h2 id="features-title">从一件装备，<br>到完整的一次出发。</h2>
-            <p>装备档案、出发清单和徒步历史彼此衔接。点开每项可直接查看对应源码。</p>
+            <p>按“整理装备 → 规划出发 → 记录回程”拆成 10 个模块。每张卡片都说明实际用途，并直达对应功能源码。</p>
           </div>
           <span class="heading-index">FIELD GUIDE<br>功能指南 / 2026</span>
         </div>
@@ -75,8 +75,8 @@
           <article class="feature-card feature-card-large" id="gear">
             <div class="card-topline"><span>装备档案</span><span class="card-symbol">01 / GEAR</span></div>
             <h3>把装备资料，<br>整理成自己的库。</h3>
-            <p>记录名称、品牌型号、分类、数量、重量、价格、状态、标签与备注；管理照片、附件和组合装备，也可用可选工具整理产品照。</p>
-            <ul><li>分类浏览、搜索与概览统计</li><li>收藏常用装备，维护库存与状态</li><li>多用户本机资料库，可在清单中借用他人装备</li></ul>
+            <p>为每件物品维护品牌、型号、分类与子分类、数量、单件重量、购买信息、存放位置、标签和备注；支持主图、多张照片及任意附件，也能建立父子装备关系。</p>
+            <ul><li>按分类、状态、名称、编号、品牌或型号筛选与排序</li><li>收藏常用装备；批量改状态、复制、移入回收站或恢复</li><li>记录可用、想买、借出、已出售和损坏等状态</li></ul>
             <a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Gear">查看装备管理源码 <span>↗</span></a>
             <span class="card-watermark" aria-hidden="true">G</span>
           </article>
@@ -93,8 +93,8 @@
           <article class="feature-card" id="planning">
             <div class="card-topline"><span>路线与天气</span><span class="card-symbol">03 / ROUTE</span></div>
             <h3>先看路线，再看天。</h3>
-            <p>导入 GPX / KML，或按地名和路线名称搜索。预览地图、距离与海拔；可组合多段路线，并查看出发时段天气、逐日预报和远期趋势。</p>
-            <ul><li>内置国内路线目录，另有在线路线搜索</li><li>海拔统计会标明轨迹数据或地形估算来源</li><li>天气和路线搜索需要联网，覆盖因地区而异</li></ul>
+            <p>导入 GPX / KML 轨迹，或按地点和路线名搜索；地点搜索可选 10、30 或 60 公里范围。预览地图与里程，可组合多段路线，并为出发时间查询天气。</p>
+            <ul><li>路线图可切换标准或卫星视图；海拔摘要注明数据来源</li><li>临近出发提供最多 16 天逐日预报；更远日期只显示周/月趋势，适合做季节参考</li><li>内置路线库可离线浏览；在线搜索和天气需要网络，地域覆盖不同</li></ul>
             <div class="card-links"><a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Routes">路线源码 <span>↗</span></a><a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Weather">天气源码 <span>↗</span></a></div>
             <span class="card-watermark" aria-hidden="true">R</span>
           </article>
@@ -102,8 +102,8 @@
           <article class="feature-card" id="meals">
             <div class="card-topline"><span>路餐与饮水</span><span class="card-symbol">04 / FOOD</span></div>
             <h3>把每天的补给，<br>也算进行程。</h3>
-            <p>按天数、餐次和人数安排食物，记录份数、包装重量、热量、价格与准备方式；汇总每日能量、总重量、预算和出发携水量。</p>
-            <ul><li>生成可复制的采购清单</li><li>根据已录食物提供路餐建议</li><li>本机拍照识别营养标签，结果先核对再保存</li></ul>
+            <p>为最多 60 天的行程设置日期、人数和每日能量目标；逐天按餐次登记食物数量、包装重量、热量、价格、准备方式与备注，并设置备用粮和出发携水量。</p>
+            <ul><li>查看每日人均热量、总重量与预算；采购清单可复制</li><li>按现有食物给出路餐组合建议，并跟踪已购买、已打包</li><li>相机识别营养标签在本机处理；识别值先检查，再自行保存</li></ul>
             <a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Meals">查看路餐功能源码 <span>↗</span></a>
             <span class="card-watermark" aria-hidden="true">F</span>
           </article>
@@ -111,8 +111,8 @@
           <article class="feature-card feature-card-photo" id="history">
             <div class="card-topline"><span>徒步历史</span><span class="card-symbol">05 / LOG</span></div>
             <h3>走过之后，<br>再把细节留下。</h3>
-            <p>从当前打包清单生成记录，或手动补录日期、路线、游记、天气与感受。轨迹、当次装备快照和实际数量各自留在这次历史里。</p>
-            <ul><li>按年份浏览，搜索路线和游记</li><li>查看历史路线图与当次装备重量</li><li>修改历史装备不会改动当前库存</li></ul>
+            <p>可由当前打包清单建立徒步记录，也可手动补录日期、路线、天气、感受和游记；导入 GPX / KML 轨迹，记录路餐与水，并保存当次装备和携带数量快照。</p>
+            <ul><li>按年份浏览，并搜索徒步标题、路线和文字记录</li><li>回看轨迹地图、海拔概览、当次装备重量和补给信息</li><li>历史装备快照独立保存，后续整理现有库存不会改写旧记录</li></ul>
             <a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/History">查看徒步记录源码 <span>↗</span></a>
             <span class="card-watermark" aria-hidden="true">L</span>
           </article>
@@ -120,10 +120,46 @@
           <article class="feature-card feature-card-import" id="data-tools">
             <div class="card-topline"><span>资料迁移与整理</span><span class="card-symbol">06 / KEEP</span></div>
             <h3>旧表格能接上，<br>本机资料也能带走。</h3>
-            <p>Excel 导入支持预览与字段匹配；CSV / TSV 可导入，CSV 可导出。当前用户的完整备份包含资料、清单、照片和附件，恢复时按编号合并。</p>
-            <ul><li>自动编号、批量编辑、复制与回收站整理</li><li>设置外观、资料库名称与显示货币</li><li>汇率按需刷新，作为价格参考</li></ul>
-            <div class="card-links"><a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/ImportExport">导入导出源码 <span>↗</span></a><a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Profiles">用户资料库源码 <span>↗</span></a></div>
+            <p>Excel 可选工作表、匹配字段并先看导入预览；导入前自动备份。CSV / TSV 可导入、CSV 可导出。完整备份含装备、清单、照片与附件；CSV 仅含装备资料。</p>
+            <ul><li>按装备编号更新，未匹配编号的行可新增</li><li>恢复完整备份时按编号合并</li><li>导入和导出均由你在本机选择文件位置</li></ul>
+            <a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/ImportExport">查看导入导出源码 <span>↗</span></a>
             <span class="card-watermark" aria-hidden="true">K</span>
+          </article>
+
+          <article class="feature-card" id="dashboard">
+            <div class="card-topline"><span>装备概览</span><span class="card-symbol">07 / DASHBOARD</span></div>
+            <h3>打开仪表盘，<br>先看装备全貌。</h3>
+            <p>用统计图查看装备分类数量、重量或购置金额分布；概览在库装备与支出，并列出收藏装备速览，可从统计卡片直接跳回装备库。</p>
+            <ul><li>图表可切换统计口径，并展开更多分类</li><li>重量统计会提示未填写重量的装备</li><li>支出和分布只基于当前本机用户资料库</li></ul>
+            <a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Dashboard">查看仪表盘源码 <span>↗</span></a>
+            <span class="card-watermark" aria-hidden="true">D</span>
+          </article>
+
+          <article class="feature-card feature-card-photo" id="photos">
+            <div class="card-topline"><span>装备照片</span><span class="card-symbol">08 / PHOTOS</span></div>
+            <h3>让照片归档，<br>装备一眼可辨。</h3>
+            <p>每项装备可设置主图、追加多张照片和其他附件；支持查看大图与恢复原图。可选产品照整理工具把图片统一为居中方形 PNG，并可加白底与柔和阴影。</p>
+            <ul><li>照片与附件随本机资料保存</li><li>整理工具是可选功能，不影响主应用使用</li><li>白底抠图需另装 rembg 与本地模型</li></ul>
+            <a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Photos">查看照片功能源码 <span>↗</span></a>
+            <span class="card-watermark" aria-hidden="true">P</span>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-topline"><span>独立用户资料库</span><span class="card-symbol">09 / PROFILES</span></div>
+            <h3>各自一份资料，<br>清单里也能借用。</h3>
+            <p>在一台 Mac 上建立多个本机用户资料库，分别保存装备、照片、清单和设置；可编辑名称与头像。打包时能把其他用户的装备加入借用清单。</p>
+            <ul><li>新用户从空资料库开始</li><li>用户间的装备与照片独立存储</li><li>借用数量、来源和重量纳入本次打包核算</li></ul>
+            <a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Profiles">查看用户资料库源码 <span>↗</span></a>
+            <span class="card-watermark" aria-hidden="true">U</span>
+          </article>
+
+          <article class="feature-card feature-card-ink">
+            <div class="card-topline"><span>偏好设置与回收站</span><span class="card-symbol">10 / TOOLS</span></div>
+            <h3>按自己的习惯，<br>整理这份资料库。</h3>
+            <p>设置浅色、深色或跟随系统外观，修改资料库名称与显示货币；可自动生成装备编号，选择复制时是否带上照片和附件，并按需刷新参考汇率。</p>
+            <ul><li>快速补齐编号、主图和购买日期格式</li><li>移入回收站的装备可查看并恢复</li><li>设置与装备均按本机用户分别保存</li></ul>
+            <div class="card-links"><a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Settings">设置源码 <span>↗</span></a><a class="card-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources/Features/Gear">回收站与装备源码 <span>↗</span></a></div>
+            <span class="card-watermark" aria-hidden="true">S</span>
           </article>
         </div>
       </section>
@@ -132,19 +168,19 @@
         <div class="shell">
           <div class="section-heading preview-heading">
             <p class="section-kicker">实际应用截图 <span>CAPTURED FROM THE APP</span></p>
-            <div><h2>这是应用本身，<br>不是界面效果图。</h2><p>直接从 macOS 应用窗口截取。画面使用隔离临时资料中的演示装备，不含你的个人装备库。</p></div>
+            <div><h2>这是应用本身，<br>不是界面效果图。</h2><p>直接从这台 Mac 正在运行的应用窗口截取。这张是设置与数据管理页面；用户名和头像已遮挡，未包含装备清单、价格或行程内容。</p></div>
             <a class="heading-link" href="https://github.com/llxace/outdoor-gear-library/tree/main/Sources">浏览全部应用源码 <span>↗</span></a>
           </div>
           <figure class="app-preview real-shot">
-            <img src="assets/app-library.png" alt="从徒步装备库 macOS 应用截取的真实界面，包含演示装备列表、分类侧栏和装备详情">
-            <figcaption><span>装备库 · macOS 实际窗口</span><span>三件演示装备 / 临时隔离资料</span></figcaption>
+            <img src="assets/app-settings-redacted.png" alt="从本机运行的徒步装备库 macOS 应用截取的设置页面，包含完整备份、CSV 导入导出、Excel 导入和整理工具；个人用户名与头像已遮挡">
+            <figcaption><span>设置与数据工具 · 本机实际窗口</span><span>个人头像与用户名已遮挡</span></figcaption>
           </figure>
           <div class="screen-index" aria-label="其他功能说明">
             <a href="#packing"><span>02 / PACKING</span><b>打包清单</b><i>选择装备，核对负重 ↗</i></a>
             <a href="#planning"><span>03 / ROUTE</span><b>路线与天气</b><i>导入轨迹，查看出发条件 ↗</i></a>
             <a href="#history"><span>04 / HISTORY</span><b>徒步记录</b><i>回看路线和当次装备 ↗</i></a>
           </div>
-          <p class="preview-note"><span class="signal-dot"></span> 此截图来自真实运行的 macOS 应用；仅演示装备为临时示例，未使用或上传个人资料。</p>
+          <p class="preview-note"><span class="signal-dot"></span> 实际应用窗口截图；公开前已遮挡个人头像与用户名。未发布真实装备记录、价格、照片、附件或徒步行程。</p>
         </div>
       </section>
 

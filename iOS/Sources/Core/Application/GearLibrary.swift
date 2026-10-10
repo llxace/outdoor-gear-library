@@ -37,11 +37,18 @@ final class GearLibrary: ObservableObject {
             }
     }
     var packedValue: Double {
-        packedGear.reduce(0) { total, gear in
-            total + gear.purchasePrice / max(gear.quantity, 1) * (packingQuantity(for: gear.id) ?? 0)
-        } + borrowedPackingItems.filter { !$0.unavailable }.reduce(0) { total, item in
-            total + item.gear.purchasePrice / max(item.gear.quantity, 1) * min(item.quantity, item.gear.quantity)
+        let ownedValue = packedGear.reduce(0.0) { total, gear in
+            let unitPrice = gear.purchasePrice / Double(max(gear.quantity, 1))
+            let quantity = packingQuantity(for: gear.id) ?? 0
+            return total + unitPrice * quantity
         }
+        let borrowedValue = borrowedPackingItems.reduce(0.0) { total, item in
+            guard !item.unavailable else { return total }
+            let unitPrice = item.gear.purchasePrice / Double(max(item.gear.quantity, 1))
+            let quantity = min(item.quantity, item.gear.quantity)
+            return total + unitPrice * quantity
+        }
+        return ownedValue + borrowedValue
     }
     var unavailablePackingCount: Int {
         packingItems.filter { item in

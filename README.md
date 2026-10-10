@@ -2,7 +2,7 @@
 
 一款 macOS 原生徒步装备管理应用，并提供 iPadOS 与 iPhone 原生工程预览版。把装备、打包清单和徒步记录放在本机整理；路线、天气和汇率等联网功能按需使用。
 
-[下载 macOS 版](https://github.com/llxace/outdoor-gear-library/releases/latest/download/outdoor-gear-library-macos.dmg) · [ZIP 下载](https://github.com/llxace/outdoor-gear-library/releases/latest/download/outdoor-gear-library-macos.zip) · [iPadOS 源码与预览包](https://github.com/llxace/outdoor-gear-library/releases/tag/ipados-1.0.1) · [iOS 源码与预览包](https://github.com/llxace/outdoor-gear-library/releases/tag/ios-1.0.1) · [项目介绍页](https://llxace.github.io/outdoor-gear-library/) · [功能预览](Docs/index.html) · [问题反馈](https://github.com/llxace/outdoor-gear-library/issues)
+[下载 macOS 版](https://github.com/llxace/outdoor-gear-library/releases/latest/download/outdoor-gear-library-macos.dmg) · [ZIP 下载](https://github.com/llxace/outdoor-gear-library/releases/latest/download/outdoor-gear-library-macos.zip) · [iPadOS 源码与预览包](https://github.com/llxace/outdoor-gear-library/releases/tag/ipados-1.0.1) · [iOS 源码与预览包](https://github.com/llxace/outdoor-gear-library/releases/tag/ios-1.0.2) · [项目介绍页](https://llxace.github.io/outdoor-gear-library/) · [功能预览](Docs/index.html) · [问题反馈](https://github.com/llxace/outdoor-gear-library/issues)
 
 > 发布仓库不包含任何用户装备清单、历史行程、照片、附件或备份。`Resources/InitialInventory.json` 是空白初始化模板；`Resources/DomesticRoutes.json` 是单独标注 ODbL 的公开路线数据。
 

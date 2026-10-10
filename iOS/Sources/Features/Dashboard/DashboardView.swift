@@ -13,8 +13,7 @@ struct DashboardView: View {
                         Text("装备概览").font(.largeTitle.bold())
                         Text("户外装备库 · 本机资料").foregroundStyle(.secondary)
                     }
-                    if #available(iOS 26.0, *) { GlassEffectContainer(spacing: 12) { metricCards } }
-                    else { metricCards }
+                    metricCards
                     if let route = library.selectedRoute {
                         VStack(alignment: .leading, spacing: 10) {
                             Label("当前路线", systemImage: "map.fill").font(.headline).foregroundStyle(OutdoorPalette.accent)

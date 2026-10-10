@@ -1,0 +1,10 @@
+/Resources/SeedData/
+/Resources/inventory.json
+/Resources/Photos/
+/Resources/Files/
+/Resources/Avatars/
+/build/
+/work/
+**/xcuserdata/
+*.ipa
+*.xcarchive

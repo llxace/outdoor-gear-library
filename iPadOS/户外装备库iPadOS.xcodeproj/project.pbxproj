@@ -1,0 +1,1198 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000001 /* OutdoorGearPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000001 /* OutdoorGearPadApp.swift */; };
+		B00000000000000000000002 /* GearLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000002 /* GearLibrary.swift */; };
+		B00000000000000000000003 /* InventoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000003 /* InventoryRepository.swift */; };
+		B00000000000000000000004 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000004 /* Gear.swift */; };
+		B00000000000000000000005 /* PackingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000005 /* PackingEntry.swift */; };
+		B00000000000000000000006 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000006 /* DashboardView.swift */; };
+		B00000000000000000000007 /* GearActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000007 /* GearActions.swift */; };
+		B00000000000000000000008 /* GearEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000008 /* GearEditor.swift */; };
+		B00000000000000000000009 /* GearListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000009 /* GearListView.swift */; };
+		B0000000000000000000000A /* GearTrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000A /* GearTrashView.swift */; };
+		B0000000000000000000000B /* HikeHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000B /* HikeHistoryView.swift */; };
+		B0000000000000000000000C /* DataTransferActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000C /* DataTransferActions.swift */; };
+		B0000000000000000000000D /* DataTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000D /* DataTransferView.swift */; };
+		B0000000000000000000000E /* PackingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000E /* PackingActions.swift */; };
+		B0000000000000000000000F /* PackingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000F /* PackingOperations.swift */; };
+		B00000000000000000000010 /* BorrowedGearPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000010 /* BorrowedGearPicker.swift */; };
+		B00000000000000000000011 /* PackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000011 /* PackingView.swift */; };
+		B00000000000000000000012 /* TripWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000012 /* TripWeatherModel.swift */; };
+		B00000000000000000000013 /* OpenMeteoWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000013 /* OpenMeteoWeatherService.swift */; };
+		B00000000000000000000014 /* RouteSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000014 /* RouteSnapshot.swift */; };
+		B00000000000000000000015 /* TripWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000015 /* TripWeather.swift */; };
+		B00000000000000000000016 /* RoutePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000016 /* RoutePickerView.swift */; };
+		B00000000000000000000017 /* RouteWeatherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000017 /* RouteWeatherCard.swift */; };
+		B00000000000000000000018 /* LibrarySettingsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000018 /* LibrarySettingsActions.swift */; };
+		B00000000000000000000019 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000019 /* SettingsView.swift */; };
+		B0000000000000000000001A /* DataCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001A /* DataCardStyle.swift */; };
+		B00000000000000000000066 /* Resources/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000066 /* Resources/Assets.xcassets */; };
+		B00000000000000000000069 /* Resources/DomesticRoutes.json in Resources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000069 /* Resources/DomesticRoutes.json */; };
+		B0000000000000000000006A /* Resources/NOTICE.md in Resources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006A /* Resources/NOTICE.md */; };
+		B0000000000000000000006B /* Sources/Features/Photos/Application/GearPhotoActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006B /* Sources/Features/Photos/Application/GearPhotoActions.swift */; };
+		B0000000000000000000006C /* Sources/Features/Photos/Data/GearPhotoFileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006C /* Sources/Features/Photos/Data/GearPhotoFileStore.swift */; };
+		B0000000000000000000006D /* Sources/Features/History/Presentation/HikeRecordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006D /* Sources/Features/History/Presentation/HikeRecordDetailView.swift */; };
+		B0000000000000000000006E /* Sources/Features/ImportExport/Data/InventoryArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006E /* Sources/Features/ImportExport/Data/InventoryArchive.swift */; };
+		B0000000000000000000006F /* Sources/Features/Routes/Data/TrailFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006F /* Sources/Features/Routes/Data/TrailFileReader.swift */; };
+		B00000000000000000000070 /* Sources/Features/Routes/Application/RouteFileActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000070 /* Sources/Features/Routes/Application/RouteFileActions.swift */; };
+		B00000000000000000000071 /* Sources/Features/Routes/Data/RouteSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000071 /* Sources/Features/Routes/Data/RouteSearchService.swift */; };
+		F00000000000000000000100 /* OutdoorGearPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000100 /* OutdoorGearPadApp.swift */; };
+		F00000000000000000000101 /* NativeLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000101 /* NativeLibrary.swift */; };
+		F00000000000000000000102 /* BackupActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000102 /* BackupActions.swift */; };
+		F00000000000000000000103 /* GearStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000103 /* GearStore.swift */; };
+		F00000000000000000000104 /* BackupMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000104 /* BackupMerge.swift */; };
+		F00000000000000000000105 /* InventoryMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000105 /* InventoryMigration.swift */; };
+		F00000000000000000000106 /* InventoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000106 /* InventoryRepository.swift */; };
+		F00000000000000000000107 /* BackupAssetRestorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000107 /* BackupAssetRestorer.swift */; };
+		F00000000000000000000108 /* InventoryBackupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000108 /* InventoryBackupService.swift */; };
+		F00000000000000000000109 /* JSONInventoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000109 /* JSONInventoryRepository.swift */; };
+		F0000000000000000000010A /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000010A /* Inventory.swift */; };
+		F0000000000000000000010B /* InventoryValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000010B /* InventoryValidation.swift */; };
+		F0000000000000000000010C /* EquipmentStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000010C /* EquipmentStatistic.swift */; };
+		F0000000000000000000010D /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000010D /* Distribution.swift */; };
+		F0000000000000000000010E /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000010E /* DashboardView.swift */; };
+		F0000000000000000000010F /* GearActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000010F /* GearActions.swift */; };
+		F00000000000000000000110 /* GearOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000110 /* GearOperations.swift */; };
+		F00000000000000000000111 /* GearAttachmentFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000111 /* GearAttachmentFiles.swift */; };
+		F00000000000000000000112 /* CategoryMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000112 /* CategoryMatching.swift */; };
+		F00000000000000000000113 /* CategoryOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000113 /* CategoryOrganization.swift */; };
+		F00000000000000000000114 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000114 /* Gear.swift */; };
+		F00000000000000000000115 /* GearAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000115 /* GearAttachment.swift */; };
+		F00000000000000000000116 /* GearExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000116 /* GearExtras.swift */; };
+		F00000000000000000000117 /* GearSubcategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000117 /* GearSubcategories.swift */; };
+		F00000000000000000000118 /* GearTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000118 /* GearTag.swift */; };
+		F00000000000000000000119 /* GearTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000119 /* GearTemplate.swift */; };
+		F0000000000000000000011A /* InventoryHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000011A /* InventoryHierarchy.swift */; };
+		F0000000000000000000011B /* AttachmentDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000011B /* AttachmentDialogs.swift */; };
+		F0000000000000000000011C /* BatchEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000011C /* BatchEditor.swift */; };
+		F0000000000000000000011D /* DuplicateEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000011D /* DuplicateEditor.swift */; };
+		F0000000000000000000011E /* FullGearDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000011E /* FullGearDetail.swift */; };
+		F0000000000000000000011F /* FullGearEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000011F /* FullGearEditor.swift */; };
+		F00000000000000000000120 /* GearCategoryBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000120 /* GearCategoryBrowser.swift */; };
+		F00000000000000000000121 /* GearDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000121 /* GearDraft.swift */; };
+		F00000000000000000000122 /* HistoryActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000122 /* HistoryActions.swift */; };
+		F00000000000000000000123 /* HistoricalTrackImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000123 /* HistoricalTrackImport.swift */; };
+		F00000000000000000000124 /* HistoryEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000124 /* HistoryEquipment.swift */; };
+		F00000000000000000000125 /* HistoryOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000125 /* HistoryOperations.swift */; };
+		F00000000000000000000126 /* HistoricalTrackDateReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000126 /* HistoricalTrackDateReader.swift */; };
+		F00000000000000000000127 /* HikeGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000127 /* HikeGear.swift */; };
+		F00000000000000000000128 /* HikeRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000128 /* HikeRecord.swift */; };
+		F00000000000000000000129 /* HikeHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000129 /* HikeHistoryView.swift */; };
+		F0000000000000000000012A /* HikeRecordDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000012A /* HikeRecordDetail.swift */; };
+		F0000000000000000000012B /* HikeRecordEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000012B /* HikeRecordEditor.swift */; };
+		F0000000000000000000012C /* HistoricalEquipmentEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000012C /* HistoricalEquipmentEditor.swift */; };
+		F0000000000000000000012D /* HistoricalEquipmentSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000012D /* HistoricalEquipmentSummary.swift */; };
+		F0000000000000000000012E /* HistoricalGearPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000012E /* HistoricalGearPicker.swift */; };
+		F0000000000000000000012F /* chooseHistoricalTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000012F /* chooseHistoricalTrack.swift */; };
+		F00000000000000000000130 /* ExcelActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000130 /* ExcelActions.swift */; };
+		F00000000000000000000131 /* CSVImportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000131 /* CSVImportRow.swift */; };
+		F00000000000000000000132 /* ExcelImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000132 /* ExcelImport.swift */; };
+		F00000000000000000000133 /* ExcelImportProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000133 /* ExcelImportProgress.swift */; };
+		F00000000000000000000134 /* NativeCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000134 /* NativeCSV.swift */; };
+		F00000000000000000000135 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000135 /* CSV.swift */; };
+		F00000000000000000000136 /* ExcelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000136 /* ExcelNode.swift */; };
+		F00000000000000000000137 /* ExcelWorkbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000137 /* ExcelWorkbook.swift */; };
+		F00000000000000000000138 /* ExcelXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000138 /* ExcelXML.swift */; };
+		F00000000000000000000139 /* LibraryTransferFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000139 /* LibraryTransferFiles.swift */; };
+		F0000000000000000000013A /* ExcelImportResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000013A /* ExcelImportResult.swift */; };
+		F0000000000000000000013B /* ExcelSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000013B /* ExcelSheet.swift */; };
+		F0000000000000000000013C /* ExcelFileDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000013C /* ExcelFileDialog.swift */; };
+		F0000000000000000000013D /* ExcelImportSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000013D /* ExcelImportSource.swift */; };
+		F0000000000000000000013E /* ExcelImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000013E /* ExcelImportView.swift */; };
+		F0000000000000000000013F /* LibraryFileDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000013F /* LibraryFileDialogs.swift */; };
+		F00000000000000000000140 /* MealActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000140 /* MealActions.swift */; };
+		F00000000000000000000141 /* FoodLabelParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000141 /* FoodLabelParsing.swift */; };
+		F00000000000000000000142 /* MealOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000142 /* MealOperations.swift */; };
+		F00000000000000000000143 /* TrailMealRecommendationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000143 /* TrailMealRecommendationOptions.swift */; };
+		F00000000000000000000144 /* FoodCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000144 /* FoodCamera.swift */; };
+		F00000000000000000000145 /* FoodTextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000145 /* FoodTextRecognizer.swift */; };
+		F00000000000000000000146 /* FoodLabelResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000146 /* FoodLabelResult.swift */; };
+		F00000000000000000000147 /* TrailFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000147 /* TrailFood.swift */; };
+		F00000000000000000000148 /* TrailMealPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000148 /* TrailMealPlan.swift */; };
+		F00000000000000000000149 /* FoodCameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000149 /* FoodCameraPreview.swift */; };
+		F0000000000000000000014A /* FoodCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000014A /* FoodCameraView.swift */; };
+		F0000000000000000000014B /* FoodLabelScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000014B /* FoodLabelScanner.swift */; };
+		F0000000000000000000014C /* TrailFoodEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000014C /* TrailFoodEditor.swift */; };
+		F0000000000000000000014D /* TrailMealRecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000014D /* TrailMealRecommendationView.swift */; };
+		F0000000000000000000014E /* TrailMealSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000014E /* TrailMealSettings.swift */; };
+		F0000000000000000000014F /* TrailMealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000014F /* TrailMealsView.swift */; };
+		F00000000000000000000150 /* BorrowingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000150 /* BorrowingActions.swift */; };
+		F00000000000000000000151 /* BorrowingRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000151 /* BorrowingRefresh.swift */; };
+		F00000000000000000000152 /* PackingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000152 /* PackingActions.swift */; };
+		F00000000000000000000153 /* BorrowingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000153 /* BorrowingOperations.swift */; };
+		F00000000000000000000154 /* PackingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000154 /* PackingOperations.swift */; };
+		F00000000000000000000155 /* TripConditionsProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000155 /* TripConditionsProviding.swift */; };
+		F00000000000000000000156 /* LiveTripConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000156 /* LiveTripConditions.swift */; };
+		F00000000000000000000157 /* BorrowedPackingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000157 /* BorrowedPackingItem.swift */; };
+		F00000000000000000000158 /* PackingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000158 /* PackingItem.swift */; };
+		F00000000000000000000159 /* PackingRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000159 /* PackingRules.swift */; };
+		F0000000000000000000015A /* BorrowedGearPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000015A /* BorrowedGearPicker.swift */; };
+		F0000000000000000000015B /* DepartureCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000015B /* DepartureCalendar.swift */; };
+		F0000000000000000000015C /* PackingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000015C /* PackingListView.swift */; };
+		F0000000000000000000015D /* PackingQuantityControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000015D /* PackingQuantityControl.swift */; };
+		F0000000000000000000015E /* PackingTripHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000015E /* PackingTripHeader.swift */; };
+		F0000000000000000000015F /* TripConditionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000015F /* TripConditionsModel.swift */; };
+		F00000000000000000000160 /* PhotoActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000160 /* PhotoActions.swift */; };
+		F00000000000000000000161 /* PhotoOriginalFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000161 /* PhotoOriginalFiles.swift */; };
+		F00000000000000000000162 /* ProductPhotoProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000162 /* ProductPhotoProcessor.swift */; };
+		F00000000000000000000163 /* GearPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000163 /* GearPhoto.swift */; };
+		F00000000000000000000164 /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000164 /* PhotoRequest.swift */; };
+		F00000000000000000000165 /* ProductPhotoControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000165 /* ProductPhotoControls.swift */; };
+		F00000000000000000000166 /* ProductPhotoEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000166 /* ProductPhotoEditor.swift */; };
+		F00000000000000000000167 /* GearTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000167 /* GearTransfer.swift */; };
+		F00000000000000000000168 /* UserLibraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000168 /* UserLibraries.swift */; };
+		F00000000000000000000169 /* GearAssetTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000169 /* GearAssetTransfer.swift */; };
+		F0000000000000000000016A /* UserCatalogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000016A /* UserCatalogRepository.swift */; };
+		F0000000000000000000016B /* LibraryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000016B /* LibraryUser.swift */; };
+		F0000000000000000000016C /* UserCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000016C /* UserCatalog.swift */; };
+		F0000000000000000000016D /* AvatarCropEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000016D /* AvatarCropEditor.swift */; };
+		F0000000000000000000016E /* AvatarCropRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000016E /* AvatarCropRenderer.swift */; };
+		F0000000000000000000016F /* AvatarCropSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000016F /* AvatarCropSource.swift */; };
+		F00000000000000000000170 /* UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000170 /* UserAvatar.swift */; };
+		F00000000000000000000171 /* UserProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000171 /* UserProfileEditor.swift */; };
+		F00000000000000000000172 /* RouteSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000172 /* RouteSelection.swift */; };
+		F00000000000000000000173 /* RouteOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000173 /* RouteOperations.swift */; };
+		F00000000000000000000174 /* RouteSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000174 /* RouteSearching.swift */; };
+		F00000000000000000000175 /* DomesticRouteCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000175 /* DomesticRouteCatalog.swift */; };
+		F00000000000000000000176 /* LiveRouteSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000176 /* LiveRouteSearch.swift */; };
+		F00000000000000000000177 /* TrailFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000177 /* TrailFileReader.swift */; };
+		F00000000000000000000178 /* TripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000178 /* TripService.swift */; };
+		F00000000000000000000179 /* HikingRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000179 /* HikingRoute.swift */; };
+		F0000000000000000000017A /* RouteElevationSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000017A /* RouteElevationSample.swift */; };
+		F0000000000000000000017B /* RouteElevationStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000017B /* RouteElevationStats.swift */; };
+		F0000000000000000000017C /* RouteTerrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000017C /* RouteTerrain.swift */; };
+		F0000000000000000000017D /* TrailPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000017D /* TrailPlace.swift */; };
+		F0000000000000000000017E /* TrailPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000017E /* TrailPoint.swift */; };
+		F0000000000000000000017F /* ExpandedRouteMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000017F /* ExpandedRouteMap.swift */; };
+		F00000000000000000000180 /* FittedRouteMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000180 /* FittedRouteMap.swift */; };
+		F00000000000000000000181 /* NativeRouteMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000181 /* NativeRouteMap.swift */; };
+		F00000000000000000000182 /* RouteMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000182 /* RouteMap.swift */; };
+		F00000000000000000000183 /* RouteMetricSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000183 /* RouteMetricSummary.swift */; };
+		F00000000000000000000184 /* RouteSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000184 /* RouteSearchModel.swift */; };
+		F00000000000000000000185 /* RouteSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000185 /* RouteSearchView.swift */; };
+		F00000000000000000000186 /* CurrencyActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000186 /* CurrencyActions.swift */; };
+		F00000000000000000000187 /* ExchangeRateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000187 /* ExchangeRateRepository.swift */; };
+		F00000000000000000000188 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000188 /* ExchangeRate.swift */; };
+		F00000000000000000000189 /* LibrarySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000189 /* LibrarySettings.swift */; };
+		F0000000000000000000018A /* LibraryPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000018A /* LibraryPreferences.swift */; };
+		F0000000000000000000018B /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000018B /* WeatherService.swift */; };
+		F0000000000000000000018C /* SeasonalOutlook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000018C /* SeasonalOutlook.swift */; };
+		F0000000000000000000018D /* WeatherDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000018D /* WeatherDay.swift */; };
+		F0000000000000000000018E /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000018E /* WeatherForecast.swift */; };
+		F0000000000000000000018F /* WeatherNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000018F /* WeatherNow.swift */; };
+		F00000000000000000000190 /* WeatherTrend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000190 /* WeatherTrend.swift */; };
+		F00000000000000000000191 /* weatherConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000191 /* weatherConditions.swift */; };
+		F00000000000000000000192 /* ForecastSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000192 /* ForecastSummaryView.swift */; };
+		F00000000000000000000193 /* SeasonalCurveChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000193 /* SeasonalCurveChart.swift */; };
+		F00000000000000000000194 /* SeasonalWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000194 /* SeasonalWeatherView.swift */; };
+		F00000000000000000000195 /* WeatherCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000195 /* WeatherCurve.swift */; };
+		F00000000000000000000196 /* WeatherTrendCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000196 /* WeatherTrendCard.swift */; };
+		F00000000000000000000197 /* LocalAssetFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000197 /* LocalAssetFiles.swift */; };
+		F00000000000000000000198 /* TripHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000198 /* TripHTTPClient.swift */; };
+		F00000000000000000000199 /* GearAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000199 /* GearAppearance.swift */; };
+		F0000000000000000000019A /* GearCategoryIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000019A /* GearCategoryIcon.swift */; };
+		F0000000000000000000019B /* GearDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000019B /* GearDesign.swift */; };
+		F0000000000000000000019C /* GearPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000019C /* GearPanel.swift */; };
+		F0000000000000000000019D /* SockSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000019D /* SockSymbol.swift */; };
+		F0000000000000000000019E /* SystemConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0000000000000000000019E /* SystemConfirmation.swift */; };
+		F00000000000000000000201 /* PadFileDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000201 /* PadFileDialog.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00000000000000000000015 /* OutdoorGearPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutdoorGearPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00000000000000000000001 /* OutdoorGearPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorGearPadApp.swift; sourceTree = "<group>"; };
+		C00000000000000000000002 /* GearLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearLibrary.swift; sourceTree = "<group>"; };
+		C00000000000000000000003 /* InventoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryRepository.swift; sourceTree = "<group>"; };
+		C00000000000000000000004 /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
+		C00000000000000000000005 /* PackingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingEntry.swift; sourceTree = "<group>"; };
+		C00000000000000000000006 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C00000000000000000000007 /* GearActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearActions.swift; sourceTree = "<group>"; };
+		C00000000000000000000008 /* GearEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearEditor.swift; sourceTree = "<group>"; };
+		C00000000000000000000009 /* GearListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearListView.swift; sourceTree = "<group>"; };
+		C0000000000000000000000A /* GearTrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearTrashView.swift; sourceTree = "<group>"; };
+		C0000000000000000000000B /* HikeHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeHistoryView.swift; sourceTree = "<group>"; };
+		C0000000000000000000000C /* DataTransferActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferActions.swift; sourceTree = "<group>"; };
+		C0000000000000000000000D /* DataTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferView.swift; sourceTree = "<group>"; };
+		C0000000000000000000000E /* PackingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingActions.swift; sourceTree = "<group>"; };
+		C0000000000000000000000F /* PackingOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingOperations.swift; sourceTree = "<group>"; };
+		C00000000000000000000010 /* BorrowedGearPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrowedGearPicker.swift; sourceTree = "<group>"; };
+		C00000000000000000000011 /* PackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingView.swift; sourceTree = "<group>"; };
+		C00000000000000000000012 /* TripWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripWeatherModel.swift; sourceTree = "<group>"; };
+		C00000000000000000000013 /* OpenMeteoWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMeteoWeatherService.swift; sourceTree = "<group>"; };
+		C00000000000000000000014 /* RouteSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSnapshot.swift; sourceTree = "<group>"; };
+		C00000000000000000000015 /* TripWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripWeather.swift; sourceTree = "<group>"; };
+		C00000000000000000000016 /* RoutePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePickerView.swift; sourceTree = "<group>"; };
+		C00000000000000000000017 /* RouteWeatherCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteWeatherCard.swift; sourceTree = "<group>"; };
+		C00000000000000000000018 /* LibrarySettingsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySettingsActions.swift; sourceTree = "<group>"; };
+		C00000000000000000000019 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C0000000000000000000001A /* DataCardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCardStyle.swift; sourceTree = "<group>"; };
+		C00000000000000000000066 /* Resources/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		C00000000000000000000069 /* Resources/DomesticRoutes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Resources/DomesticRoutes.json; sourceTree = "<group>"; };
+		C0000000000000000000006A /* Resources/NOTICE.md */ = {isa = PBXFileReference; lastKnownFileType = text.markdown; path = Resources/NOTICE.md; sourceTree = "<group>"; };
+		C0000000000000000000006B /* Sources/Features/Photos/Application/GearPhotoActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/Photos/Application/GearPhotoActions.swift; sourceTree = "<group>"; };
+		C0000000000000000000006C /* Sources/Features/Photos/Data/GearPhotoFileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/Photos/Data/GearPhotoFileStore.swift; sourceTree = "<group>"; };
+		C0000000000000000000006D /* Sources/Features/History/Presentation/HikeRecordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/History/Presentation/HikeRecordDetailView.swift; sourceTree = "<group>"; };
+		C0000000000000000000006E /* Sources/Features/ImportExport/Data/InventoryArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/ImportExport/Data/InventoryArchive.swift; sourceTree = "<group>"; };
+		C0000000000000000000006F /* Sources/Features/Routes/Data/TrailFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/Routes/Data/TrailFileReader.swift; sourceTree = "<group>"; };
+		C00000000000000000000070 /* Sources/Features/Routes/Application/RouteFileActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/Routes/Application/RouteFileActions.swift; sourceTree = "<group>"; };
+		C00000000000000000000071 /* Sources/Features/Routes/Data/RouteSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/Routes/Data/RouteSearchService.swift; sourceTree = "<group>"; };
+		E00000000000000000000100 /* OutdoorGearPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/App/OutdoorGearPadApp.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000101 /* NativeLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/App/Presentation/NativeLibrary.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000102 /* BackupActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Core/Application/BackupActions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000103 /* GearStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Core/Application/GearStore.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000104 /* BackupMerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Core/Business/BackupMerge.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000105 /* InventoryMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Core/Business/InventoryMigration.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000106 /* InventoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Core/Business/InventoryRepository.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000107 /* BackupAssetRestorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Core/Data/BackupAssetRestorer.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000108 /* InventoryBackupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Core/Data/InventoryBackupService.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000109 /* JSONInventoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Core/Data/JSONInventoryRepository.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000010A /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Core/Domain/Inventory.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000010B /* InventoryValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Core/Domain/InventoryValidation.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000010C /* EquipmentStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Dashboard/Business/EquipmentStatistic.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000010D /* Distribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Dashboard/Domain/Distribution.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000010E /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Dashboard/Presentation/DashboardView.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000010F /* GearActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Application/GearActions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000110 /* GearOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Business/GearOperations.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000111 /* GearAttachmentFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Data/GearAttachmentFiles.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000112 /* CategoryMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Domain/CategoryMatching.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000113 /* CategoryOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Domain/CategoryOrganization.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000114 /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Domain/Gear.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000115 /* GearAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Domain/GearAttachment.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000116 /* GearExtras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Domain/GearExtras.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000117 /* GearSubcategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Domain/GearSubcategories.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000118 /* GearTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Domain/GearTag.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000119 /* GearTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Domain/GearTemplate.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000011A /* InventoryHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Domain/InventoryHierarchy.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000011B /* AttachmentDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Presentation/AttachmentDialogs.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000011C /* BatchEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Presentation/BatchEditor.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000011D /* DuplicateEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Presentation/DuplicateEditor.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000011E /* FullGearDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Presentation/FullGearDetail.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000011F /* FullGearEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Presentation/FullGearEditor.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000120 /* GearCategoryBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Presentation/GearCategoryBrowser.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000121 /* GearDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Gear/Presentation/GearDraft.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000122 /* HistoryActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Application/HistoryActions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000123 /* HistoricalTrackImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Business/HistoricalTrackImport.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000124 /* HistoryEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Business/HistoryEquipment.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000125 /* HistoryOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Business/HistoryOperations.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000126 /* HistoricalTrackDateReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Data/HistoricalTrackDateReader.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000127 /* HikeGear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Domain/HikeGear.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000128 /* HikeRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Domain/HikeRecord.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000129 /* HikeHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Presentation/HikeHistoryView.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000012A /* HikeRecordDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Presentation/HikeRecordDetail.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000012B /* HikeRecordEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Presentation/HikeRecordEditor.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000012C /* HistoricalEquipmentEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Presentation/HistoricalEquipmentEditor.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000012D /* HistoricalEquipmentSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Presentation/HistoricalEquipmentSummary.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000012E /* HistoricalGearPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Presentation/HistoricalGearPicker.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000012F /* chooseHistoricalTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/History/Presentation/chooseHistoricalTrack.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000130 /* ExcelActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Application/ExcelActions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000131 /* CSVImportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Business/CSVImportRow.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000132 /* ExcelImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Business/ExcelImport.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000133 /* ExcelImportProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Business/ExcelImportProgress.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000134 /* NativeCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Business/NativeCSV.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000135 /* CSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Data/CSV.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000136 /* ExcelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Data/ExcelNode.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000137 /* ExcelWorkbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Data/ExcelWorkbook.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000138 /* ExcelXML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Data/ExcelXML.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000139 /* LibraryTransferFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Data/LibraryTransferFiles.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000013A /* ExcelImportResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Domain/ExcelImportResult.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000013B /* ExcelSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Domain/ExcelSheet.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000013C /* ExcelFileDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Presentation/ExcelFileDialog.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000013D /* ExcelImportSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Presentation/ExcelImportSource.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000013E /* ExcelImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Presentation/ExcelImportView.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000013F /* LibraryFileDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/ImportExport/Presentation/LibraryFileDialogs.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000140 /* MealActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Application/MealActions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000141 /* FoodLabelParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Business/FoodLabelParsing.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000142 /* MealOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Business/MealOperations.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000143 /* TrailMealRecommendationOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Business/TrailMealRecommendationOptions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000144 /* FoodCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Data/FoodCamera.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000145 /* FoodTextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Data/FoodTextRecognizer.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000146 /* FoodLabelResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Domain/FoodLabelResult.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000147 /* TrailFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Domain/TrailFood.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000148 /* TrailMealPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Domain/TrailMealPlan.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000149 /* FoodCameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Presentation/FoodCameraPreview.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000014A /* FoodCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Presentation/FoodCameraView.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000014B /* FoodLabelScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Presentation/FoodLabelScanner.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000014C /* TrailFoodEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Presentation/TrailFoodEditor.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000014D /* TrailMealRecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Presentation/TrailMealRecommendationView.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000014E /* TrailMealSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Presentation/TrailMealSettings.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000014F /* TrailMealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Meals/Presentation/TrailMealsView.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000150 /* BorrowingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Application/BorrowingActions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000151 /* BorrowingRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Application/BorrowingRefresh.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000152 /* PackingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Application/PackingActions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000153 /* BorrowingOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Business/BorrowingOperations.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000154 /* PackingOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Business/PackingOperations.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000155 /* TripConditionsProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Business/TripConditionsProviding.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000156 /* LiveTripConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Data/LiveTripConditions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000157 /* BorrowedPackingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Domain/BorrowedPackingItem.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000158 /* PackingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Domain/PackingItem.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000159 /* PackingRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Domain/PackingRules.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000015A /* BorrowedGearPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Presentation/BorrowedGearPicker.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000015B /* DepartureCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Presentation/DepartureCalendar.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000015C /* PackingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Presentation/PackingListView.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000015D /* PackingQuantityControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Presentation/PackingQuantityControl.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000015E /* PackingTripHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Presentation/PackingTripHeader.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000015F /* TripConditionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Packing/Presentation/TripConditionsModel.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000160 /* PhotoActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Photos/Application/PhotoActions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000161 /* PhotoOriginalFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Photos/Data/PhotoOriginalFiles.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000162 /* ProductPhotoProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Photos/Data/ProductPhotoProcessor.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000163 /* GearPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Photos/Presentation/GearPhoto.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000164 /* PhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Photos/Presentation/PhotoRequest.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000165 /* ProductPhotoControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Photos/Presentation/ProductPhotoControls.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000166 /* ProductPhotoEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Photos/Presentation/ProductPhotoEditor.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000167 /* GearTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Profiles/Application/GearTransfer.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000168 /* UserLibraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Profiles/Application/UserLibraries.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000169 /* GearAssetTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Profiles/Data/GearAssetTransfer.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000016A /* UserCatalogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Profiles/Data/UserCatalogRepository.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000016B /* LibraryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Profiles/Domain/LibraryUser.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000016C /* UserCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Profiles/Domain/UserCatalog.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000016D /* AvatarCropEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Profiles/Presentation/AvatarCropEditor.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000016E /* AvatarCropRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Profiles/Presentation/AvatarCropRenderer.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000016F /* AvatarCropSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Profiles/Presentation/AvatarCropSource.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000170 /* UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Profiles/Presentation/UserAvatar.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000171 /* UserProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Profiles/Presentation/UserProfileEditor.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000172 /* RouteSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Application/RouteSelection.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000173 /* RouteOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Business/RouteOperations.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000174 /* RouteSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Business/RouteSearching.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000175 /* DomesticRouteCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Data/DomesticRouteCatalog.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000176 /* LiveRouteSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Data/LiveRouteSearch.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000177 /* TrailFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Data/TrailFileReader.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000178 /* TripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Data/TripService.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000179 /* HikingRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Domain/HikingRoute.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000017A /* RouteElevationSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Domain/RouteElevationSample.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000017B /* RouteElevationStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Domain/RouteElevationStats.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000017C /* RouteTerrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Domain/RouteTerrain.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000017D /* TrailPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Domain/TrailPlace.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000017E /* TrailPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Domain/TrailPoint.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000017F /* ExpandedRouteMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Presentation/ExpandedRouteMap.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000180 /* FittedRouteMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Presentation/FittedRouteMap.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000181 /* NativeRouteMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Presentation/NativeRouteMap.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000182 /* RouteMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Presentation/RouteMap.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000183 /* RouteMetricSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Presentation/RouteMetricSummary.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000184 /* RouteSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Presentation/RouteSearchModel.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000185 /* RouteSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Routes/Presentation/RouteSearchView.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000186 /* CurrencyActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Settings/Application/CurrencyActions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000187 /* ExchangeRateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Settings/Data/ExchangeRateRepository.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000188 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Settings/Domain/ExchangeRate.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000189 /* LibrarySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Settings/Domain/LibrarySettings.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000018A /* LibraryPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Settings/Presentation/LibraryPreferences.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000018B /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Data/WeatherService.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000018C /* SeasonalOutlook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Domain/SeasonalOutlook.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000018D /* WeatherDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Domain/WeatherDay.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000018E /* WeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Domain/WeatherForecast.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000018F /* WeatherNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Domain/WeatherNow.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000190 /* WeatherTrend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Domain/WeatherTrend.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000191 /* weatherConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Domain/weatherConditions.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000192 /* ForecastSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Presentation/ForecastSummaryView.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000193 /* SeasonalCurveChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Presentation/SeasonalCurveChart.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000194 /* SeasonalWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Presentation/SeasonalWeatherView.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000195 /* WeatherCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Presentation/WeatherCurve.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000196 /* WeatherTrendCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Features/Weather/Presentation/WeatherTrendCard.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000197 /* LocalAssetFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Shared/Data/LocalAssetFiles.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000198 /* TripHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Shared/Data/TripHTTPClient.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000199 /* GearAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Shared/Presentation/GearAppearance.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000019A /* GearCategoryIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Shared/Presentation/GearCategoryIcon.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000019B /* GearDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Shared/Presentation/GearDesign.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000019C /* GearPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Shared/Presentation/GearPanel.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000019D /* SockSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Shared/Presentation/SockSymbol.swift"; sourceTree = SOURCE_ROOT; };
+		E0000000000000000000019E /* SystemConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/Shared/Presentation/SystemConfirmation.swift"; sourceTree = SOURCE_ROOT; };
+		E00000000000000000000201 /* PadFileDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shared/Presentation/PadFileDialog.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EBD80283078CC4300D3F07B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000006B /* Sources/Features/Photos/Application/GearPhotoActions.swift */,
+				C0000000000000000000006C /* Sources/Features/Photos/Data/GearPhotoFileStore.swift */,
+				C0000000000000000000006D /* Sources/Features/History/Presentation/HikeRecordDetailView.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		A00000000000000000000020 = {
+			isa = PBXGroup;
+			children = (
+				E00000000000000000000210 /* Complete iPadOS Sources */,
+				C00000000000000000000071 /* Sources/Features/Routes/Data/RouteSearchService.swift */,
+				C00000000000000000000070 /* Sources/Features/Routes/Application/RouteFileActions.swift */,
+				C0000000000000000000006F /* Sources/Features/Routes/Data/TrailFileReader.swift */,
+				C0000000000000000000006E /* Sources/Features/ImportExport/Data/InventoryArchive.swift */,
+				D0000000000000000000001D /* Sources */,
+				A00000000000000000000012 /* Info.plist */,
+				C00000000000000000000066 /* Resources/Assets.xcassets */,
+				C00000000000000000000069 /* Resources/DomesticRoutes.json */,
+				C0000000000000000000006A /* Resources/NOTICE.md */,
+				A00000000000000000000021 /* Products */,
+				1EBD80283078CC4300D3F07B /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000021 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000015 /* OutdoorGearPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000001 /* OutdoorGearPadApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000002 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000002 /* GearLibrary.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000003 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000003 /* InventoryRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000004 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000004 /* Gear.swift */,
+				C00000000000000000000005 /* PackingEntry.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000005 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000002 /* Application */,
+				D00000000000000000000003 /* Data */,
+				D00000000000000000000004 /* Domain */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000006 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000006 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000007 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000007 /* GearActions.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000008 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000008 /* GearEditor.swift */,
+				C00000000000000000000009 /* GearListView.swift */,
+				C0000000000000000000000A /* GearTrashView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000009 /* Gear */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000007 /* Application */,
+				D00000000000000000000008 /* Presentation */,
+			);
+			path = Gear;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000B /* HikeHistoryView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000B /* History */ = {
+			isa = PBXGroup;
+			children = (
+				D0000000000000000000000A /* Presentation */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000C /* DataTransferActions.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000D /* DataTransferView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000E /* ImportExport */ = {
+			isa = PBXGroup;
+			children = (
+				D0000000000000000000000C /* Application */,
+				D0000000000000000000000D /* Presentation */,
+			);
+			path = ImportExport;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000E /* PackingActions.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000010 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000F /* PackingOperations.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000011 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000010 /* BorrowedGearPicker.swift */,
+				C00000000000000000000011 /* PackingView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000012 /* Packing */ = {
+			isa = PBXGroup;
+			children = (
+				D0000000000000000000000F /* Application */,
+				D00000000000000000000010 /* Business */,
+				D00000000000000000000011 /* Presentation */,
+			);
+			path = Packing;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000013 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000012 /* TripWeatherModel.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000014 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000013 /* OpenMeteoWeatherService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000015 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000014 /* RouteSnapshot.swift */,
+				C00000000000000000000015 /* TripWeather.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000016 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000016 /* RoutePickerView.swift */,
+				C00000000000000000000017 /* RouteWeatherCard.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000017 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000013 /* Application */,
+				D00000000000000000000014 /* Data */,
+				D00000000000000000000015 /* Domain */,
+				D00000000000000000000016 /* Presentation */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000018 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000018 /* LibrarySettingsActions.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000019 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000019 /* SettingsView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000001A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000018 /* Application */,
+				D00000000000000000000019 /* Presentation */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000001B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000006 /* Dashboard */,
+				D00000000000000000000009 /* Gear */,
+				D0000000000000000000000B /* History */,
+				D0000000000000000000000E /* ImportExport */,
+				D00000000000000000000012 /* Packing */,
+				D00000000000000000000017 /* Routes */,
+				D0000000000000000000001A /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000001C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000001A /* DataCardStyle.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000001D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000001 /* App */,
+				D00000000000000000000005 /* Core */,
+				D0000000000000000000001B /* Features */,
+				D0000000000000000000001C /* Shared */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E00000000000000000000210 /* Complete iPadOS Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E00000000000000000000100,
+				E00000000000000000000101,
+				E00000000000000000000102,
+				E00000000000000000000103,
+				E00000000000000000000104,
+				E00000000000000000000105,
+				E00000000000000000000106,
+				E00000000000000000000107,
+				E00000000000000000000108,
+				E00000000000000000000109,
+				E0000000000000000000010A,
+				E0000000000000000000010B,
+				E0000000000000000000010C,
+				E0000000000000000000010D,
+				E0000000000000000000010E,
+				E0000000000000000000010F,
+				E00000000000000000000110,
+				E00000000000000000000111,
+				E00000000000000000000112,
+				E00000000000000000000113,
+				E00000000000000000000114,
+				E00000000000000000000115,
+				E00000000000000000000116,
+				E00000000000000000000117,
+				E00000000000000000000118,
+				E00000000000000000000119,
+				E0000000000000000000011A,
+				E0000000000000000000011B,
+				E0000000000000000000011C,
+				E0000000000000000000011D,
+				E0000000000000000000011E,
+				E0000000000000000000011F,
+				E00000000000000000000120,
+				E00000000000000000000121,
+				E00000000000000000000122,
+				E00000000000000000000123,
+				E00000000000000000000124,
+				E00000000000000000000125,
+				E00000000000000000000126,
+				E00000000000000000000127,
+				E00000000000000000000128,
+				E00000000000000000000129,
+				E0000000000000000000012A,
+				E0000000000000000000012B,
+				E0000000000000000000012C,
+				E0000000000000000000012D,
+				E0000000000000000000012E,
+				E0000000000000000000012F,
+				E00000000000000000000130,
+				E00000000000000000000131,
+				E00000000000000000000132,
+				E00000000000000000000133,
+				E00000000000000000000134,
+				E00000000000000000000135,
+				E00000000000000000000136,
+				E00000000000000000000137,
+				E00000000000000000000138,
+				E00000000000000000000139,
+				E0000000000000000000013A,
+				E0000000000000000000013B,
+				E0000000000000000000013C,
+				E0000000000000000000013D,
+				E0000000000000000000013E,
+				E0000000000000000000013F,
+				E00000000000000000000140,
+				E00000000000000000000141,
+				E00000000000000000000142,
+				E00000000000000000000143,
+				E00000000000000000000144,
+				E00000000000000000000145,
+				E00000000000000000000146,
+				E00000000000000000000147,
+				E00000000000000000000148,
+				E00000000000000000000149,
+				E0000000000000000000014A,
+				E0000000000000000000014B,
+				E0000000000000000000014C,
+				E0000000000000000000014D,
+				E0000000000000000000014E,
+				E0000000000000000000014F,
+				E00000000000000000000150,
+				E00000000000000000000151,
+				E00000000000000000000152,
+				E00000000000000000000153,
+				E00000000000000000000154,
+				E00000000000000000000155,
+				E00000000000000000000156,
+				E00000000000000000000157,
+				E00000000000000000000158,
+				E00000000000000000000159,
+				E0000000000000000000015A,
+				E0000000000000000000015B,
+				E0000000000000000000015C,
+				E0000000000000000000015D,
+				E0000000000000000000015E,
+				E0000000000000000000015F,
+				E00000000000000000000160,
+				E00000000000000000000161,
+				E00000000000000000000162,
+				E00000000000000000000163,
+				E00000000000000000000164,
+				E00000000000000000000165,
+				E00000000000000000000166,
+				E00000000000000000000167,
+				E00000000000000000000168,
+				E00000000000000000000169,
+				E0000000000000000000016A,
+				E0000000000000000000016B,
+				E0000000000000000000016C,
+				E0000000000000000000016D,
+				E0000000000000000000016E,
+				E0000000000000000000016F,
+				E00000000000000000000170,
+				E00000000000000000000171,
+				E00000000000000000000172,
+				E00000000000000000000173,
+				E00000000000000000000174,
+				E00000000000000000000175,
+				E00000000000000000000176,
+				E00000000000000000000177,
+				E00000000000000000000178,
+				E00000000000000000000179,
+				E0000000000000000000017A,
+				E0000000000000000000017B,
+				E0000000000000000000017C,
+				E0000000000000000000017D,
+				E0000000000000000000017E,
+				E0000000000000000000017F,
+				E00000000000000000000180,
+				E00000000000000000000181,
+				E00000000000000000000182,
+				E00000000000000000000183,
+				E00000000000000000000184,
+				E00000000000000000000185,
+				E00000000000000000000186,
+				E00000000000000000000187,
+				E00000000000000000000188,
+				E00000000000000000000189,
+				E0000000000000000000018A,
+				E0000000000000000000018B,
+				E0000000000000000000018C,
+				E0000000000000000000018D,
+				E0000000000000000000018E,
+				E0000000000000000000018F,
+				E00000000000000000000190,
+				E00000000000000000000191,
+				E00000000000000000000192,
+				E00000000000000000000193,
+				E00000000000000000000194,
+				E00000000000000000000195,
+				E00000000000000000000196,
+				E00000000000000000000197,
+				E00000000000000000000198,
+				E00000000000000000000199,
+				E0000000000000000000019A,
+				E0000000000000000000019B,
+				E0000000000000000000019C,
+				E0000000000000000000019D,
+				E0000000000000000000019E,
+				E0000000000000000000019F,
+				E00000000000000000000201,
+			);
+			name = "Complete iPadOS Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000030 /* OutdoorGearPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000060 /* Build configuration list for PBXNativeTarget "OutdoorGearPad" */;
+			buildPhases = (
+				A00000000000000000000040 /* Sources */,
+				A00000000000000000000041 /* Resources */,
+				A00000000000000000000042 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OutdoorGearPad;
+			productName = "户外装备库";
+			productReference = A00000000000000000000015 /* OutdoorGearPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000031 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A00000000000000000000030 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000050 /* Build configuration list for PBXProject "户外装备库iPadOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				zh_CN,
+			);
+			mainGroup = A00000000000000000000020;
+			productRefGroup = A00000000000000000000021 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000030 /* OutdoorGearPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000066 /* Resources/Assets.xcassets in Resources */,
+				B00000000000000000000069 /* Resources/DomesticRoutes.json in Resources */,
+				B0000000000000000000006A /* Resources/NOTICE.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00000000000000000000201 /* PadFileDialog.swift in Sources */,
+F00000000000000000000100 /* OutdoorGearPadApp.swift in Sources */,
+				F00000000000000000000101 /* NativeLibrary.swift in Sources */,
+				F00000000000000000000102 /* BackupActions.swift in Sources */,
+				F00000000000000000000103 /* GearStore.swift in Sources */,
+				F00000000000000000000104 /* BackupMerge.swift in Sources */,
+				F00000000000000000000105 /* InventoryMigration.swift in Sources */,
+				F00000000000000000000106 /* InventoryRepository.swift in Sources */,
+				F00000000000000000000107 /* BackupAssetRestorer.swift in Sources */,
+				F00000000000000000000108 /* InventoryBackupService.swift in Sources */,
+				F00000000000000000000109 /* JSONInventoryRepository.swift in Sources */,
+				F0000000000000000000010A /* Inventory.swift in Sources */,
+				F0000000000000000000010B /* InventoryValidation.swift in Sources */,
+				F0000000000000000000010C /* EquipmentStatistic.swift in Sources */,
+				F0000000000000000000010D /* Distribution.swift in Sources */,
+				F0000000000000000000010E /* DashboardView.swift in Sources */,
+				F0000000000000000000010F /* GearActions.swift in Sources */,
+				F00000000000000000000110 /* GearOperations.swift in Sources */,
+				F00000000000000000000111 /* GearAttachmentFiles.swift in Sources */,
+				F00000000000000000000112 /* CategoryMatching.swift in Sources */,
+				F00000000000000000000113 /* CategoryOrganization.swift in Sources */,
+				F00000000000000000000114 /* Gear.swift in Sources */,
+				F00000000000000000000115 /* GearAttachment.swift in Sources */,
+				F00000000000000000000116 /* GearExtras.swift in Sources */,
+				F00000000000000000000117 /* GearSubcategories.swift in Sources */,
+				F00000000000000000000118 /* GearTag.swift in Sources */,
+				F00000000000000000000119 /* GearTemplate.swift in Sources */,
+				F0000000000000000000011A /* InventoryHierarchy.swift in Sources */,
+				F0000000000000000000011B /* AttachmentDialogs.swift in Sources */,
+				F0000000000000000000011C /* BatchEditor.swift in Sources */,
+				F0000000000000000000011D /* DuplicateEditor.swift in Sources */,
+				F0000000000000000000011E /* FullGearDetail.swift in Sources */,
+				F0000000000000000000011F /* FullGearEditor.swift in Sources */,
+				F00000000000000000000120 /* GearCategoryBrowser.swift in Sources */,
+				F00000000000000000000121 /* GearDraft.swift in Sources */,
+				F00000000000000000000122 /* HistoryActions.swift in Sources */,
+				F00000000000000000000123 /* HistoricalTrackImport.swift in Sources */,
+				F00000000000000000000124 /* HistoryEquipment.swift in Sources */,
+				F00000000000000000000125 /* HistoryOperations.swift in Sources */,
+				F00000000000000000000126 /* HistoricalTrackDateReader.swift in Sources */,
+				F00000000000000000000127 /* HikeGear.swift in Sources */,
+				F00000000000000000000128 /* HikeRecord.swift in Sources */,
+				F00000000000000000000129 /* HikeHistoryView.swift in Sources */,
+				F0000000000000000000012A /* HikeRecordDetail.swift in Sources */,
+				F0000000000000000000012B /* HikeRecordEditor.swift in Sources */,
+				F0000000000000000000012C /* HistoricalEquipmentEditor.swift in Sources */,
+				F0000000000000000000012D /* HistoricalEquipmentSummary.swift in Sources */,
+				F0000000000000000000012E /* HistoricalGearPicker.swift in Sources */,
+				F0000000000000000000012F /* chooseHistoricalTrack.swift in Sources */,
+				F00000000000000000000130 /* ExcelActions.swift in Sources */,
+				F00000000000000000000131 /* CSVImportRow.swift in Sources */,
+				F00000000000000000000132 /* ExcelImport.swift in Sources */,
+				F00000000000000000000133 /* ExcelImportProgress.swift in Sources */,
+				F00000000000000000000134 /* NativeCSV.swift in Sources */,
+				F00000000000000000000135 /* CSV.swift in Sources */,
+				F00000000000000000000136 /* ExcelNode.swift in Sources */,
+				F00000000000000000000137 /* ExcelWorkbook.swift in Sources */,
+				F00000000000000000000138 /* ExcelXML.swift in Sources */,
+				F00000000000000000000139 /* LibraryTransferFiles.swift in Sources */,
+				F0000000000000000000013A /* ExcelImportResult.swift in Sources */,
+				F0000000000000000000013B /* ExcelSheet.swift in Sources */,
+				F0000000000000000000013C /* ExcelFileDialog.swift in Sources */,
+				F0000000000000000000013D /* ExcelImportSource.swift in Sources */,
+				F0000000000000000000013E /* ExcelImportView.swift in Sources */,
+				F0000000000000000000013F /* LibraryFileDialogs.swift in Sources */,
+				F00000000000000000000140 /* MealActions.swift in Sources */,
+				F00000000000000000000141 /* FoodLabelParsing.swift in Sources */,
+				F00000000000000000000142 /* MealOperations.swift in Sources */,
+				F00000000000000000000143 /* TrailMealRecommendationOptions.swift in Sources */,
+				F00000000000000000000144 /* FoodCamera.swift in Sources */,
+				F00000000000000000000145 /* FoodTextRecognizer.swift in Sources */,
+				F00000000000000000000146 /* FoodLabelResult.swift in Sources */,
+				F00000000000000000000147 /* TrailFood.swift in Sources */,
+				F00000000000000000000148 /* TrailMealPlan.swift in Sources */,
+				F00000000000000000000149 /* FoodCameraPreview.swift in Sources */,
+				F0000000000000000000014A /* FoodCameraView.swift in Sources */,
+				F0000000000000000000014B /* FoodLabelScanner.swift in Sources */,
+				F0000000000000000000014C /* TrailFoodEditor.swift in Sources */,
+				F0000000000000000000014D /* TrailMealRecommendationView.swift in Sources */,
+				F0000000000000000000014E /* TrailMealSettings.swift in Sources */,
+				F0000000000000000000014F /* TrailMealsView.swift in Sources */,
+				F00000000000000000000150 /* BorrowingActions.swift in Sources */,
+				F00000000000000000000151 /* BorrowingRefresh.swift in Sources */,
+				F00000000000000000000152 /* PackingActions.swift in Sources */,
+				F00000000000000000000153 /* BorrowingOperations.swift in Sources */,
+				F00000000000000000000154 /* PackingOperations.swift in Sources */,
+				F00000000000000000000155 /* TripConditionsProviding.swift in Sources */,
+				F00000000000000000000156 /* LiveTripConditions.swift in Sources */,
+				F00000000000000000000157 /* BorrowedPackingItem.swift in Sources */,
+				F00000000000000000000158 /* PackingItem.swift in Sources */,
+				F00000000000000000000159 /* PackingRules.swift in Sources */,
+				F0000000000000000000015A /* BorrowedGearPicker.swift in Sources */,
+				F0000000000000000000015B /* DepartureCalendar.swift in Sources */,
+				F0000000000000000000015C /* PackingListView.swift in Sources */,
+				F0000000000000000000015D /* PackingQuantityControl.swift in Sources */,
+				F0000000000000000000015E /* PackingTripHeader.swift in Sources */,
+				F0000000000000000000015F /* TripConditionsModel.swift in Sources */,
+				F00000000000000000000160 /* PhotoActions.swift in Sources */,
+				F00000000000000000000161 /* PhotoOriginalFiles.swift in Sources */,
+				F00000000000000000000162 /* ProductPhotoProcessor.swift in Sources */,
+				F00000000000000000000163 /* GearPhoto.swift in Sources */,
+				F00000000000000000000164 /* PhotoRequest.swift in Sources */,
+				F00000000000000000000165 /* ProductPhotoControls.swift in Sources */,
+				F00000000000000000000166 /* ProductPhotoEditor.swift in Sources */,
+				F00000000000000000000167 /* GearTransfer.swift in Sources */,
+				F00000000000000000000168 /* UserLibraries.swift in Sources */,
+				F00000000000000000000169 /* GearAssetTransfer.swift in Sources */,
+				F0000000000000000000016A /* UserCatalogRepository.swift in Sources */,
+				F0000000000000000000016B /* LibraryUser.swift in Sources */,
+				F0000000000000000000016C /* UserCatalog.swift in Sources */,
+				F0000000000000000000016D /* AvatarCropEditor.swift in Sources */,
+				F0000000000000000000016E /* AvatarCropRenderer.swift in Sources */,
+				F0000000000000000000016F /* AvatarCropSource.swift in Sources */,
+				F00000000000000000000170 /* UserAvatar.swift in Sources */,
+				F00000000000000000000171 /* UserProfileEditor.swift in Sources */,
+				F00000000000000000000172 /* RouteSelection.swift in Sources */,
+				F00000000000000000000173 /* RouteOperations.swift in Sources */,
+				F00000000000000000000174 /* RouteSearching.swift in Sources */,
+				F00000000000000000000175 /* DomesticRouteCatalog.swift in Sources */,
+				F00000000000000000000176 /* LiveRouteSearch.swift in Sources */,
+				F00000000000000000000177 /* TrailFileReader.swift in Sources */,
+				F00000000000000000000178 /* TripService.swift in Sources */,
+				F00000000000000000000179 /* HikingRoute.swift in Sources */,
+				F0000000000000000000017A /* RouteElevationSample.swift in Sources */,
+				F0000000000000000000017B /* RouteElevationStats.swift in Sources */,
+				F0000000000000000000017C /* RouteTerrain.swift in Sources */,
+				F0000000000000000000017D /* TrailPlace.swift in Sources */,
+				F0000000000000000000017E /* TrailPoint.swift in Sources */,
+				F0000000000000000000017F /* ExpandedRouteMap.swift in Sources */,
+				F00000000000000000000180 /* FittedRouteMap.swift in Sources */,
+				F00000000000000000000181 /* NativeRouteMap.swift in Sources */,
+				F00000000000000000000182 /* RouteMap.swift in Sources */,
+				F00000000000000000000183 /* RouteMetricSummary.swift in Sources */,
+				F00000000000000000000184 /* RouteSearchModel.swift in Sources */,
+				F00000000000000000000185 /* RouteSearchView.swift in Sources */,
+				F00000000000000000000186 /* CurrencyActions.swift in Sources */,
+				F00000000000000000000187 /* ExchangeRateRepository.swift in Sources */,
+				F00000000000000000000188 /* ExchangeRate.swift in Sources */,
+				F00000000000000000000189 /* LibrarySettings.swift in Sources */,
+				F0000000000000000000018A /* LibraryPreferences.swift in Sources */,
+				F0000000000000000000018B /* WeatherService.swift in Sources */,
+				F0000000000000000000018C /* SeasonalOutlook.swift in Sources */,
+				F0000000000000000000018D /* WeatherDay.swift in Sources */,
+				F0000000000000000000018E /* WeatherForecast.swift in Sources */,
+				F0000000000000000000018F /* WeatherNow.swift in Sources */,
+				F00000000000000000000190 /* WeatherTrend.swift in Sources */,
+				F00000000000000000000191 /* weatherConditions.swift in Sources */,
+				F00000000000000000000192 /* ForecastSummaryView.swift in Sources */,
+				F00000000000000000000193 /* SeasonalCurveChart.swift in Sources */,
+				F00000000000000000000194 /* SeasonalWeatherView.swift in Sources */,
+				F00000000000000000000195 /* WeatherCurve.swift in Sources */,
+				F00000000000000000000196 /* WeatherTrendCard.swift in Sources */,
+				F00000000000000000000197 /* LocalAssetFiles.swift in Sources */,
+				F00000000000000000000198 /* TripHTTPClient.swift in Sources */,
+				F00000000000000000000199 /* GearAppearance.swift in Sources */,
+				F0000000000000000000019A /* GearCategoryIcon.swift in Sources */,
+				F0000000000000000000019B /* GearDesign.swift in Sources */,
+				F0000000000000000000019C /* GearPanel.swift in Sources */,
+				F0000000000000000000019D /* SockSymbol.swift in Sources */,
+				F0000000000000000000019E /* SystemConfirmation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MS4577WFRD;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A00000000000000000000053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MS4577WFRD;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A00000000000000000000061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U5SVB7CP3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.llxace.outdoorgear.ipados;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A00000000000000000000062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U5SVB7CP3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.llxace.outdoorgear.ipados;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000050 /* Build configuration list for PBXProject "户外装备库iPadOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000052 /* Debug */,
+				A00000000000000000000053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000060 /* Build configuration list for PBXNativeTarget "OutdoorGearPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000061 /* Debug */,
+				A00000000000000000000062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000031 /* Project object */;
+}

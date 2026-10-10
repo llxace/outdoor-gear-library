@@ -1,0 +1,52 @@
+name: Build and publish iPadOS preview
+
+on:
+  push:
+    tags:
+      - "ipados-*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-15
+    steps:
+      - name: Check out tagged source
+        uses: actions/checkout@v6
+
+      - name: Archive iPadOS app
+        run: |
+          xcodebuild \
+            -project "iPadOS/户外装备库iPadOS.xcodeproj" \
+            -scheme OutdoorGearPad \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -archivePath "$RUNNER_TEMP/OutdoorGearPad.xcarchive" \
+            CODE_SIGNING_ALLOWED=NO \
+            archive
+
+      - name: Package unsigned IPA and source
+        run: |
+          mkdir -p "$RUNNER_TEMP/ipados-package/Payload"
+          ditto "$RUNNER_TEMP/OutdoorGearPad.xcarchive/Products/Applications/OutdoorGearPad.app" \
+            "$RUNNER_TEMP/ipados-package/Payload/OutdoorGearPad.app"
+          cd "$RUNNER_TEMP/ipados-package"
+          zip -qry "$RUNNER_TEMP/OutdoorGearPad-unsigned.ipa" Payload
+          cd "$GITHUB_WORKSPACE"
+          git archive --format=zip --prefix="OutdoorGearPad-${GITHUB_REF_NAME}/" \
+            "$GITHUB_SHA" iPadOS > "$RUNNER_TEMP/OutdoorGearPad-source.zip"
+          cd "$RUNNER_TEMP"
+          shasum -a 256 OutdoorGearPad-unsigned.ipa OutdoorGearPad-source.zip > SHA256SUMS.txt
+
+      - name: Publish GitHub preview release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            --title "户外装备库 iPadOS ${GITHUB_REF_NAME#ipados-} 预览版" \
+            --notes-file iPadOS/RELEASE_NOTES.md \
+            --prerelease \
+            "$RUNNER_TEMP/OutdoorGearPad-unsigned.ipa" \
+            "$RUNNER_TEMP/OutdoorGearPad-source.zip" \
+            "$RUNNER_TEMP/SHA256SUMS.txt"

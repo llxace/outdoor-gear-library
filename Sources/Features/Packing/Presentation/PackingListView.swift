@@ -174,43 +174,42 @@ struct PackingListView: View {
     }
 
     private var ownedEquipmentRows: some View {
-        ForEach(candidates) { gear in
-            let quantity = store.inventory.packingQuantity(gear.id)
-            let damaged = gear.status == "损坏"
-            HStack(spacing: 16) {
-                Toggle(
-                    isOn: Binding(
-                        get: { store.inventory.packingQuantity(gear.id) != nil },
-                        set: { checked in
-                            _ = store.setPackingQuantity(checked ? min(1, gear.quantity) : nil, for: gear.id)
-                        })
-                ) {
-                    HStack(spacing: 12) {
-                        GearPhoto(filename: gear.photo).frame(width: 44, height: 44)
-                            .accessibilityLabel(gear.name + "的照片")
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(gear.name).fontWeight(.medium)
-                            Text(
-                                gear.category + " · " + (gear.weight > 0 ? gear.weight.formatted() + " g / 件" : "未填重量")
-                                    + " · 库内 " + gear.quantity.formatted() + " 件" + (damaged ? " · 已损坏，无法装包" : "")
-                            )
-                            .font(.caption).foregroundStyle(.secondary)
-                        }
+        ForEach(candidates) { ownedEquipmentRow(for: $0) }
+    }
+
+    private func ownedEquipmentRow(for gear: Gear) -> some View {
+        let quantity = store.inventory.packingQuantity(gear.id)
+        let damaged = gear.status == "损坏"
+        let weight = gear.weight > 0 ? gear.weight.formatted() + " g / 件" : "未填重量"
+        let details = "\(gear.category) · \(weight) · 库内 \(gear.quantity.formatted()) 件"
+            + (damaged ? " · 已损坏，无法装包" : "")
+        let packedWeight = quantity.map { gear.weight > 0 ? (gear.weight * $0).formatted() + " g" : "待补重量" } ?? "—"
+
+        return HStack(spacing: 16) {
+            Toggle(
+                isOn: Binding(
+                    get: { store.inventory.packingQuantity(gear.id) != nil },
+                    set: { checked in
+                        _ = store.setPackingQuantity(checked ? min(1, gear.quantity) : nil, for: gear.id)
+                    })
+            ) {
+                HStack(spacing: 12) {
+                    GearPhoto(filename: gear.photo).frame(width: 44, height: 44)
+                        .accessibilityLabel(gear.name + "的照片")
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(gear.name).fontWeight(.medium)
+                        Text(details).font(.caption).foregroundStyle(.secondary)
                     }
-                }.toggleStyle(.checkbox).disabled(damaged)
-                Spacer()
-                PackingQuantityControl(name: gear.name, quantity: quantity, maximum: gear.quantity) {
-                    _ = store.setPackingQuantity($0, for: gear.id)
                 }
-                .disabled(damaged)
-                Text(
-                    damaged
-                        ? "已损坏"
-                        : (quantity.map { gear.weight > 0 ? (gear.weight * $0).formatted() + " g" : "待补重量" } ?? "—")
-                )
+            }.toggleStyle(.checkbox).disabled(damaged)
+            Spacer()
+            PackingQuantityControl(name: gear.name, quantity: quantity, maximum: gear.quantity) {
+                _ = store.setPackingQuantity($0, for: gear.id)
+            }
+            .disabled(damaged)
+            Text(damaged ? "已损坏" : packedWeight)
                 .monospacedDigit().frame(width: 110, alignment: .trailing)
-            }.padding(.vertical, 6).opacity(damaged ? 0.45 : 1)
-        }
+        }.padding(.vertical, 6).opacity(damaged ? 0.45 : 1)
     }
 
     private var packingSummary: some View {

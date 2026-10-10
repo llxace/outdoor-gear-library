@@ -1,0 +1,12 @@
+# Local models and runtime data are not source files
+models/u2net.onnx
+seed/
+dist/
+.tools/
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+*.msi
+*.zip

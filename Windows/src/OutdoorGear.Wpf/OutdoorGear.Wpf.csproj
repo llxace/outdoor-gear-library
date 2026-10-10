@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\OutdoorGear.Core\OutdoorGear.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>户外装备库</AssemblyName>
+    <RootNamespace>OutdoorGear.Wpf</RootNamespace>
+    <Version>0.20.4</Version>
+    <AssemblyVersion>0.20.4.68</AssemblyVersion>
+    <FileVersion>0.20.4.68</FileVersion>
+    <Product>户外装备库 Windows 原生版</Product>
+    <SatelliteResourceLanguages>zh-Hans</SatelliteResourceLanguages>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Resources\DomesticRoutes.json"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+    <Content Include="Resources\NOTICE-UPSTREAM.md"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+    <Content Include="..\..\THIRD-PARTY-NOTICES.md"><Link>THIRD-PARTY-NOTICES.md</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+    <Content Include="..\..\models\u2net.onnx" Condition="Exists('..\..\models\u2net.onnx')"><Link>Resources\Models\u2net.onnx</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+    <Content Include="..\..\models\LICENSE-u2net.txt"><Link>Resources\Models\LICENSE-u2net.txt</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+    <Content Include="..\..\models\tessdata\**\*"><Link>Resources\Ocr\tessdata\%(Filename)%(Extension)</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+    <Content Include="..\..\models\LICENSE-tessdata-fast.txt"><Link>Resources\Ocr\LICENSE-tessdata-fast.txt</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+    <Content Include="..\..\LICENSE"><Link>LICENSE</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="OpenCvSharp5.Windows" Version="5.0.0.20260702" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Win32" Version="4.151.4" />
+  </ItemGroup>
+
+</Project>

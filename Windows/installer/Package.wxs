@@ -1,0 +1,25 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="户外装备库 Windows 原生版" Manufacturer="个人离线应用" Version="0.20.4" UpgradeCode="7D4E8553-3F2E-4236-B2EA-3E59B449A68E" Scope="perUser" InstallerVersion="500">
+    <SummaryInformation Description="户外装备库 0.20.4 (68) Windows x64 安装包，包含经用户授权打包的个人资料。" Manufacturer="个人离线应用" />
+    <MajorUpgrade DowngradeErrorMessage="已安装更新版本的户外装备库。" />
+    <MediaTemplate EmbedCab="yes" />
+    <Feature Id="Main" Title="户外装备库" Level="1"><ComponentGroupRef Id="ApplicationFiles" /><ComponentRef Id="DesktopShortcut" /></Feature>
+  </Package>
+  <Fragment>
+    <StandardDirectory Id="LocalAppDataFolder">
+      <Directory Id="LocalAppDataProgramsFolder" Name="Programs">
+        <Directory Id="INSTALLFOLDER" Name="户外装备库" />
+      </Directory>
+    </StandardDirectory>
+    <StandardDirectory Id="DesktopFolder" />
+    <ComponentGroup Id="ApplicationFiles" Directory="INSTALLFOLDER">
+      <Files Include="!(bindpath.Publish)\**">
+        <Exclude Files="!(bindpath.Publish)\**.pdb" />
+      </Files>
+    </ComponentGroup>
+    <Component Id="DesktopShortcut" Directory="DesktopFolder" Guid="C62E15FC-0E89-42D8-A466-43C7DA978C12">
+      <Shortcut Id="DesktopAppShortcut" Name="户外装备库" Target="[INSTALLFOLDER]户外装备库.exe" WorkingDirectory="INSTALLFOLDER" />
+      <RegistryValue Root="HKCU" Key="Software\OutdoorGearLibrary\Installer" Name="Installed" Type="integer" Value="1" KeyPath="yes" />
+    </Component>
+  </Fragment>
+</Wix>

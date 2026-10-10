@@ -1,0 +1,7 @@
+<Project Sdk="WixToolset.Sdk/6.0.2">
+  <PropertyGroup>
+    <OutputType>Package</OutputType>
+    <InstallerPlatform>x64</InstallerPlatform>
+    <OutputName>户外装备库-0.20.4-68-x64</OutputName>
+  </PropertyGroup>
+</Project>

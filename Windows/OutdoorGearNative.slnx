@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OutdoorGear.Core/OutdoorGear.Core.csproj" />
+    <Project Path="src/OutdoorGear.Wpf/OutdoorGear.Wpf.csproj" />
+  </Folder>
+</Solution>

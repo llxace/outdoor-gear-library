@@ -1,8 +1,8 @@
 # 徒步装备库
 
-一款 macOS 原生徒步装备管理应用，并提供 iPadOS 与 iPhone 原生工程预览版。把装备、打包清单和徒步记录放在本机整理；路线、天气和汇率等联网功能按需使用。
+一款 macOS 原生徒步装备管理应用，并提供 Windows、iPadOS 与 iPhone 原生工程版本。把装备、打包清单和徒步记录放在本机整理；路线、天气和汇率等联网功能按需使用。
 
-[下载 macOS 版](https://github.com/llxace/outdoor-gear-library/releases/latest/download/outdoor-gear-library-macos.dmg) · [ZIP 下载](https://github.com/llxace/outdoor-gear-library/releases/latest/download/outdoor-gear-library-macos.zip) · [iPadOS 源码与预览包](https://github.com/llxace/outdoor-gear-library/releases/tag/ipados-1.0.1) · [iOS 源码与预览包](https://github.com/llxace/outdoor-gear-library/releases/tag/ios-1.0.2) · [项目介绍页](https://llxace.github.io/outdoor-gear-library/) · [功能预览](Docs/index.html) · [问题反馈](https://github.com/llxace/outdoor-gear-library/issues)
+[下载 macOS 版](https://github.com/llxace/outdoor-gear-library/releases/latest/download/outdoor-gear-library-macos.dmg) · [ZIP 下载](https://github.com/llxace/outdoor-gear-library/releases/latest/download/outdoor-gear-library-macos.zip) · [Windows 下载与源码](https://github.com/llxace/outdoor-gear-library/releases/tag/windows-0.20.4) · [iPadOS 源码与预览包](https://github.com/llxace/outdoor-gear-library/releases/tag/ipados-1.0.1) · [iOS 源码与预览包](https://github.com/llxace/outdoor-gear-library/releases/tag/ios-1.0.2) · [项目介绍页](https://llxace.github.io/outdoor-gear-library/) · [功能预览](Docs/index.html) · [问题反馈](https://github.com/llxace/outdoor-gear-library/issues)
 
 > 发布仓库不包含任何用户装备清单、历史行程、照片、附件或备份。`Resources/InitialInventory.json` 是空白初始化模板；`Resources/DomesticRoutes.json` 是单独标注 ODbL 的公开路线数据。
 
@@ -35,6 +35,10 @@
 - [下载 ZIP 压缩包](https://github.com/llxace/outdoor-gear-library/releases/latest/download/outdoor-gear-library-macos.zip)：解压后将应用移入“应用程序”。
 
 安装包由 GitHub Actions 从仓库源码构建，包含 Apple silicon 与 Intel 通用架构。当前版本未使用 Developer ID 签名或 Apple 公证；首次打开时，如果 macOS 提示无法验证开发者，请在 Finder 中按住 Control 点按应用，选择“打开”。发布标签会自动生成 GitHub Release 和 SHA-256 校验文件。
+
+## Windows 版
+
+Windows 原生 WPF 版源码位于 [Windows/](Windows/)，本次提供 Windows x64 ZIP 安装包。公开版本首次启动时创建空白资料库，不包含个人装备资料或照片。由于当前发布环境为 macOS，压缩包完成了 Windows x64 交叉构建，但尚未在实体 Windows 设备上验证安装和硬件相关功能。
 
 ## iPadOS 源码与预览包
 

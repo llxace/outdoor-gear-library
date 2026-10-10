@@ -1,0 +1,16 @@
+# Local user data: never commit device inventory, photos, avatars, files or backups
+Resources/inventory.json
+Resources/Photos/
+Resources/Files/
+Resources/Avatars/
+*.zip
+*.ipa
+*.xcarchive/
+*.dSYM/
+DerivedData/
+build/
+build-*/
+device-build/
+xcuserdata/
+*.xccheckout
+.DS_Store

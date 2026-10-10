@@ -1,0 +1,52 @@
+name: Build and publish iOS preview
+
+on:
+  push:
+    tags:
+      - "ios-*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-15
+    steps:
+      - name: Check out tagged source
+        uses: actions/checkout@v6
+
+      - name: Archive iOS app
+        run: |
+          xcodebuild \
+            -project "iOS/户外装备库iPhone.xcodeproj" \
+            -scheme OutdoorGearPhone \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -archivePath "$RUNNER_TEMP/OutdoorGearPhone.xcarchive" \
+            CODE_SIGNING_ALLOWED=NO \
+            archive
+
+      - name: Package unsigned IPA and source
+        run: |
+          mkdir -p "$RUNNER_TEMP/ios-package/Payload"
+          ditto "$RUNNER_TEMP/OutdoorGearPhone.xcarchive/Products/Applications/OutdoorGearPhone.app" \
+            "$RUNNER_TEMP/ios-package/Payload/OutdoorGearPhone.app"
+          cd "$RUNNER_TEMP/ios-package"
+          zip -qry "$RUNNER_TEMP/OutdoorGearPhone-unsigned.ipa" Payload
+          cd "$GITHUB_WORKSPACE"
+          git archive --format=zip --prefix="OutdoorGear-iPhone-${GITHUB_REF_NAME}/" \
+            "$GITHUB_SHA" iOS > "$RUNNER_TEMP/OutdoorGear-iPhone-source.zip"
+          cd "$RUNNER_TEMP"
+          shasum -a 256 OutdoorGearPhone-unsigned.ipa OutdoorGear-iPhone-source.zip > SHA256SUMS.txt
+
+      - name: Publish GitHub preview release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            --title "户外装备库 iOS ${GITHUB_REF_NAME#ios-} 预览版" \
+            --notes-file iOS/RELEASE_NOTES.md \
+            --prerelease \
+            "$RUNNER_TEMP/OutdoorGearPhone-unsigned.ipa" \
+            "$RUNNER_TEMP/OutdoorGear-iPhone-source.zip" \
+            "$RUNNER_TEMP/SHA256SUMS.txt"

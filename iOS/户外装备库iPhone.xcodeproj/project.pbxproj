@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000001 /* OutdoorGearPhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000001 /* OutdoorGearPhoneApp.swift */; };
+		B00000000000000000000002 /* GearLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000002 /* GearLibrary.swift */; };
+		B00000000000000000000003 /* InventoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000003 /* InventoryRepository.swift */; };
+		B00000000000000000000004 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000004 /* Gear.swift */; };
+		B00000000000000000000005 /* PackingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000005 /* PackingEntry.swift */; };
+		B00000000000000000000006 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000006 /* DashboardView.swift */; };
+		B00000000000000000000007 /* GearActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000007 /* GearActions.swift */; };
+		B00000000000000000000008 /* GearEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000008 /* GearEditor.swift */; };
+		B00000000000000000000009 /* GearListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000009 /* GearListView.swift */; };
+		B0000000000000000000000A /* GearTrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000A /* GearTrashView.swift */; };
+		B0000000000000000000000B /* HikeHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000B /* HikeHistoryView.swift */; };
+		B0000000000000000000000C /* DataTransferActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000C /* DataTransferActions.swift */; };
+		B0000000000000000000000D /* DataTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000D /* DataTransferView.swift */; };
+		B0000000000000000000000E /* PackingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000E /* PackingActions.swift */; };
+		B0000000000000000000000F /* PackingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000000F /* PackingOperations.swift */; };
+		B00000000000000000000010 /* BorrowedGearPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000010 /* BorrowedGearPicker.swift */; };
+		B00000000000000000000011 /* PackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000011 /* PackingView.swift */; };
+		B00000000000000000000012 /* TripWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000012 /* TripWeatherModel.swift */; };
+		B00000000000000000000013 /* OpenMeteoWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000013 /* OpenMeteoWeatherService.swift */; };
+		B00000000000000000000014 /* RouteSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000014 /* RouteSnapshot.swift */; };
+		B00000000000000000000015 /* TripWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000015 /* TripWeather.swift */; };
+		B00000000000000000000016 /* RoutePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000016 /* RoutePickerView.swift */; };
+		B00000000000000000000017 /* RouteWeatherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000017 /* RouteWeatherCard.swift */; };
+		B00000000000000000000018 /* LibrarySettingsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000018 /* LibrarySettingsActions.swift */; };
+		B00000000000000000000019 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000019 /* SettingsView.swift */; };
+		B0000000000000000000001A /* DataCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000001A /* DataCardStyle.swift */; };
+		B00000000000000000000066 /* Resources/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000066 /* Resources/Assets.xcassets */; };
+		B00000000000000000000069 /* Resources/DomesticRoutes.json in Resources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000069 /* Resources/DomesticRoutes.json */; };
+		B0000000000000000000006A /* Resources/NOTICE.md in Resources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006A /* Resources/NOTICE.md */; };
+		B0000000000000000000006B /* Sources/Features/Photos/Application/GearPhotoActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006B /* Sources/Features/Photos/Application/GearPhotoActions.swift */; };
+		B0000000000000000000006C /* Sources/Features/Photos/Data/GearPhotoFileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006C /* Sources/Features/Photos/Data/GearPhotoFileStore.swift */; };
+		B0000000000000000000006D /* Sources/Features/History/Presentation/HikeRecordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006D /* Sources/Features/History/Presentation/HikeRecordDetailView.swift */; };
+		B0000000000000000000006E /* Sources/Features/ImportExport/Data/InventoryArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006E /* Sources/Features/ImportExport/Data/InventoryArchive.swift */; };
+		B0000000000000000000006F /* Sources/Features/Routes/Data/TrailFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000000000000000000006F /* Sources/Features/Routes/Data/TrailFileReader.swift */; };
+		B00000000000000000000070 /* Sources/Features/Routes/Application/RouteFileActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000070 /* Sources/Features/Routes/Application/RouteFileActions.swift */; };
+		B00000000000000000000071 /* Sources/Features/Routes/Data/RouteSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000071 /* Sources/Features/Routes/Data/RouteSearchService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00000000000000000000015 /* OutdoorGearPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutdoorGearPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00000000000000000000001 /* OutdoorGearPhoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorGearPhoneApp.swift; sourceTree = "<group>"; };
+		C00000000000000000000002 /* GearLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearLibrary.swift; sourceTree = "<group>"; };
+		C00000000000000000000003 /* InventoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryRepository.swift; sourceTree = "<group>"; };
+		C00000000000000000000004 /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
+		C00000000000000000000005 /* PackingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingEntry.swift; sourceTree = "<group>"; };
+		C00000000000000000000006 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C00000000000000000000007 /* GearActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearActions.swift; sourceTree = "<group>"; };
+		C00000000000000000000008 /* GearEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearEditor.swift; sourceTree = "<group>"; };
+		C00000000000000000000009 /* GearListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearListView.swift; sourceTree = "<group>"; };
+		C0000000000000000000000A /* GearTrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearTrashView.swift; sourceTree = "<group>"; };
+		C0000000000000000000000B /* HikeHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeHistoryView.swift; sourceTree = "<group>"; };
+		C0000000000000000000000C /* DataTransferActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferActions.swift; sourceTree = "<group>"; };
+		C0000000000000000000000D /* DataTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferView.swift; sourceTree = "<group>"; };
+		C0000000000000000000000E /* PackingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingActions.swift; sourceTree = "<group>"; };
+		C0000000000000000000000F /* PackingOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingOperations.swift; sourceTree = "<group>"; };
+		C00000000000000000000010 /* BorrowedGearPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrowedGearPicker.swift; sourceTree = "<group>"; };
+		C00000000000000000000011 /* PackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingView.swift; sourceTree = "<group>"; };
+		C00000000000000000000012 /* TripWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripWeatherModel.swift; sourceTree = "<group>"; };
+		C00000000000000000000013 /* OpenMeteoWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMeteoWeatherService.swift; sourceTree = "<group>"; };
+		C00000000000000000000014 /* RouteSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSnapshot.swift; sourceTree = "<group>"; };
+		C00000000000000000000015 /* TripWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripWeather.swift; sourceTree = "<group>"; };
+		C00000000000000000000016 /* RoutePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePickerView.swift; sourceTree = "<group>"; };
+		C00000000000000000000017 /* RouteWeatherCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteWeatherCard.swift; sourceTree = "<group>"; };
+		C00000000000000000000018 /* LibrarySettingsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySettingsActions.swift; sourceTree = "<group>"; };
+		C00000000000000000000019 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C0000000000000000000001A /* DataCardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCardStyle.swift; sourceTree = "<group>"; };
+		C00000000000000000000066 /* Resources/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		C00000000000000000000069 /* Resources/DomesticRoutes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Resources/DomesticRoutes.json; sourceTree = "<group>"; };
+		C0000000000000000000006A /* Resources/NOTICE.md */ = {isa = PBXFileReference; lastKnownFileType = text.markdown; path = Resources/NOTICE.md; sourceTree = "<group>"; };
+		C0000000000000000000006B /* Sources/Features/Photos/Application/GearPhotoActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/Photos/Application/GearPhotoActions.swift; sourceTree = "<group>"; };
+		C0000000000000000000006C /* Sources/Features/Photos/Data/GearPhotoFileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/Photos/Data/GearPhotoFileStore.swift; sourceTree = "<group>"; };
+		C0000000000000000000006D /* Sources/Features/History/Presentation/HikeRecordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/History/Presentation/HikeRecordDetailView.swift; sourceTree = "<group>"; };
+		C0000000000000000000006E /* Sources/Features/ImportExport/Data/InventoryArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/ImportExport/Data/InventoryArchive.swift; sourceTree = "<group>"; };
+		C0000000000000000000006F /* Sources/Features/Routes/Data/TrailFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/Routes/Data/TrailFileReader.swift; sourceTree = "<group>"; };
+		C00000000000000000000070 /* Sources/Features/Routes/Application/RouteFileActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/Routes/Application/RouteFileActions.swift; sourceTree = "<group>"; };
+		C00000000000000000000071 /* Sources/Features/Routes/Data/RouteSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Features/Routes/Data/RouteSearchService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EBD80283078CC4300D3F07B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000006B /* Sources/Features/Photos/Application/GearPhotoActions.swift */,
+				C0000000000000000000006C /* Sources/Features/Photos/Data/GearPhotoFileStore.swift */,
+				C0000000000000000000006D /* Sources/Features/History/Presentation/HikeRecordDetailView.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		A00000000000000000000020 = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000071 /* Sources/Features/Routes/Data/RouteSearchService.swift */,
+				C00000000000000000000070 /* Sources/Features/Routes/Application/RouteFileActions.swift */,
+				C0000000000000000000006F /* Sources/Features/Routes/Data/TrailFileReader.swift */,
+				C0000000000000000000006E /* Sources/Features/ImportExport/Data/InventoryArchive.swift */,
+				D0000000000000000000001D /* Sources */,
+				A00000000000000000000012 /* Info.plist */,
+				C00000000000000000000066 /* Resources/Assets.xcassets */,
+				C00000000000000000000069 /* Resources/DomesticRoutes.json */,
+				C0000000000000000000006A /* Resources/NOTICE.md */,
+				A00000000000000000000021 /* Products */,
+				1EBD80283078CC4300D3F07B /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000021 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000015 /* OutdoorGearPhone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000001 /* OutdoorGearPhoneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000002 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000002 /* GearLibrary.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000003 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000003 /* InventoryRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000004 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000004 /* Gear.swift */,
+				C00000000000000000000005 /* PackingEntry.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000005 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000002 /* Application */,
+				D00000000000000000000003 /* Data */,
+				D00000000000000000000004 /* Domain */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000006 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000006 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000007 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000007 /* GearActions.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000008 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000008 /* GearEditor.swift */,
+				C00000000000000000000009 /* GearListView.swift */,
+				C0000000000000000000000A /* GearTrashView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000009 /* Gear */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000007 /* Application */,
+				D00000000000000000000008 /* Presentation */,
+			);
+			path = Gear;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000B /* HikeHistoryView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000B /* History */ = {
+			isa = PBXGroup;
+			children = (
+				D0000000000000000000000A /* Presentation */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000C /* DataTransferActions.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000D /* DataTransferView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000E /* ImportExport */ = {
+			isa = PBXGroup;
+			children = (
+				D0000000000000000000000C /* Application */,
+				D0000000000000000000000D /* Presentation */,
+			);
+			path = ImportExport;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000000F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000E /* PackingActions.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000010 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000F /* PackingOperations.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000011 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000010 /* BorrowedGearPicker.swift */,
+				C00000000000000000000011 /* PackingView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000012 /* Packing */ = {
+			isa = PBXGroup;
+			children = (
+				D0000000000000000000000F /* Application */,
+				D00000000000000000000010 /* Business */,
+				D00000000000000000000011 /* Presentation */,
+			);
+			path = Packing;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000013 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000012 /* TripWeatherModel.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000014 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000013 /* OpenMeteoWeatherService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000015 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000014 /* RouteSnapshot.swift */,
+				C00000000000000000000015 /* TripWeather.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000016 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000016 /* RoutePickerView.swift */,
+				C00000000000000000000017 /* RouteWeatherCard.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000017 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000013 /* Application */,
+				D00000000000000000000014 /* Data */,
+				D00000000000000000000015 /* Domain */,
+				D00000000000000000000016 /* Presentation */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000018 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000018 /* LibrarySettingsActions.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000019 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000019 /* SettingsView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000001A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000018 /* Application */,
+				D00000000000000000000019 /* Presentation */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000001B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000006 /* Dashboard */,
+				D00000000000000000000009 /* Gear */,
+				D0000000000000000000000B /* History */,
+				D0000000000000000000000E /* ImportExport */,
+				D00000000000000000000012 /* Packing */,
+				D00000000000000000000017 /* Routes */,
+				D0000000000000000000001A /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000001C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000001A /* DataCardStyle.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D0000000000000000000001D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000001 /* App */,
+				D00000000000000000000005 /* Core */,
+				D0000000000000000000001B /* Features */,
+				D0000000000000000000001C /* Shared */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000030 /* OutdoorGearPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000060 /* Build configuration list for PBXNativeTarget "OutdoorGearPhone" */;
+			buildPhases = (
+				A00000000000000000000040 /* Sources */,
+				A00000000000000000000041 /* Resources */,
+				A00000000000000000000042 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OutdoorGearPhone;
+			productName = "户外装备库";
+			productReference = A00000000000000000000015 /* OutdoorGearPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000031 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A00000000000000000000030 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000050 /* Build configuration list for PBXProject "户外装备库iPhone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				zh_CN,
+			);
+			mainGroup = A00000000000000000000020;
+			productRefGroup = A00000000000000000000021 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000030 /* OutdoorGearPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000066 /* Resources/Assets.xcassets in Resources */,
+				B00000000000000000000069 /* Resources/DomesticRoutes.json in Resources */,
+				B0000000000000000000006A /* Resources/NOTICE.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000001 /* OutdoorGearPhoneApp.swift in Sources */,
+				B00000000000000000000002 /* GearLibrary.swift in Sources */,
+				B00000000000000000000003 /* InventoryRepository.swift in Sources */,
+				B00000000000000000000004 /* Gear.swift in Sources */,
+				B00000000000000000000005 /* PackingEntry.swift in Sources */,
+				B00000000000000000000006 /* DashboardView.swift in Sources */,
+				B00000000000000000000007 /* GearActions.swift in Sources */,
+				B00000000000000000000008 /* GearEditor.swift in Sources */,
+				B00000000000000000000009 /* GearListView.swift in Sources */,
+				B0000000000000000000000A /* GearTrashView.swift in Sources */,
+				B0000000000000000000000B /* HikeHistoryView.swift in Sources */,
+				B0000000000000000000000C /* DataTransferActions.swift in Sources */,
+				B0000000000000000000000D /* DataTransferView.swift in Sources */,
+				B0000000000000000000000E /* PackingActions.swift in Sources */,
+				B0000000000000000000000F /* PackingOperations.swift in Sources */,
+				B00000000000000000000010 /* BorrowedGearPicker.swift in Sources */,
+				B00000000000000000000011 /* PackingView.swift in Sources */,
+				B00000000000000000000012 /* TripWeatherModel.swift in Sources */,
+				B00000000000000000000013 /* OpenMeteoWeatherService.swift in Sources */,
+				B00000000000000000000014 /* RouteSnapshot.swift in Sources */,
+				B00000000000000000000015 /* TripWeather.swift in Sources */,
+				B00000000000000000000016 /* RoutePickerView.swift in Sources */,
+				B00000000000000000000017 /* RouteWeatherCard.swift in Sources */,
+				B00000000000000000000018 /* LibrarySettingsActions.swift in Sources */,
+				B00000000000000000000019 /* SettingsView.swift in Sources */,
+				B0000000000000000000001A /* DataCardStyle.swift in Sources */,
+				B0000000000000000000006B /* Sources/Features/Photos/Application/GearPhotoActions.swift in Sources */,
+				B0000000000000000000006C /* Sources/Features/Photos/Data/GearPhotoFileStore.swift in Sources */,
+				B0000000000000000000006D /* Sources/Features/History/Presentation/HikeRecordDetailView.swift in Sources */,
+				B0000000000000000000006E /* Sources/Features/ImportExport/Data/InventoryArchive.swift in Sources */,
+				B0000000000000000000006F /* Sources/Features/Routes/Data/TrailFileReader.swift in Sources */,
+				B00000000000000000000070 /* Sources/Features/Routes/Application/RouteFileActions.swift in Sources */,
+				B00000000000000000000071 /* Sources/Features/Routes/Data/RouteSearchService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A00000000000000000000053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A00000000000000000000061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+								GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.llxace.outdoorgear.iphone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A00000000000000000000062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+								GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.llxace.outdoorgear.iphone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000050 /* Build configuration list for PBXProject "户外装备库iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000052 /* Debug */,
+				A00000000000000000000053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000060 /* Build configuration list for PBXNativeTarget "OutdoorGearPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000061 /* Debug */,
+				A00000000000000000000062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000031 /* Project object */;
+}

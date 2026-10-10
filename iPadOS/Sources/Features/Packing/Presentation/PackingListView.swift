@@ -251,25 +251,33 @@ struct PackingListView: View {
     }
 
     private func gearSelectionToggle(_ gear: Gear, damaged: Bool) -> some View {
-        Toggle(
-            isOn: Binding(
-                get: { store.inventory.packingQuantity(gear.id) != nil },
-                set: { checked in
-                    _ = store.setPackingQuantity(checked ? min(1, gear.quantity) : nil, for: gear.id)
-                })
-        ) {
-            HStack(spacing: 12) {
-                GearPhoto(filename: gear.photo).frame(width: 44, height: 44)
-                    .accessibilityLabel(gear.name + "的照片")
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(gear.name).fontWeight(.medium).lineLimit(2)
-                    Text(
-                        gear.category + " · " + (gear.weight > 0 ? gear.weight.formatted() + " g / 件" : "未填重量")
-                            + " · 库内 " + gear.quantity.formatted() + " 件" + (damaged ? " · 已损坏，无法装包" : "")
-                    ).font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
-                }.frame(maxWidth: .infinity, alignment: .leading)
+        let weight = gear.weight > 0 ? gear.weight.formatted() + " g / 件" : "未填重量"
+        let details = gear.category + " · " + weight + " · 库内 " + gear.quantity.formatted() + " 件"
+            + (damaged ? " · 已损坏，无法装包" : "")
+        return Toggle(isOn: packingSelection(for: gear)) {
+            gearSelectionLabel(gear, details: details)
+        }
+        .toggleStyle(.switch).disabled(damaged)
+    }
+
+    private func packingSelection(for gear: Gear) -> Binding<Bool> {
+        Binding(
+            get: { store.inventory.packingQuantity(gear.id) != nil },
+            set: { checked in
+                _ = store.setPackingQuantity(checked ? min(1, gear.quantity) : nil, for: gear.id)
+            })
+    }
+
+    private func gearSelectionLabel(_ gear: Gear, details: String) -> some View {
+        HStack(spacing: 12) {
+            GearPhoto(filename: gear.photo).frame(width: 44, height: 44)
+                .accessibilityLabel(gear.name + "的照片")
+            VStack(alignment: .leading, spacing: 4) {
+                Text(gear.name).fontWeight(.medium).lineLimit(2)
+                Text(details).font(.caption).foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
             }.frame(maxWidth: .infinity, alignment: .leading)
-        }.toggleStyle(.switch).disabled(damaged)
+        }.frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private func ownedSubtotal(_ gear: Gear, quantity: Double?, damaged: Bool) -> some View {
